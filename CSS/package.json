@@ -1,11 +1,12 @@
 {
-  "name": "sass_projet3",
+  "name": "ohmyfood",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass ./CSS/sass/base/main.scss ./CSS/projet3.css",
+    "watch:sass": "sass --watch ./CSS/sass/base/main.scss ./CSS/projet3.css"
   },
-  "author": "Raphael_Bressi",
+  "author": "RBRS",
   "license": "ISC"
 }
