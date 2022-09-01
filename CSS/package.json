@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "sass": "sass ./CSS/projet3.scss ./CSS/projet3.css",
-    "watch:sass": "sass --watch ./CSS/projet3.scss ./CSS/projet3.css"
+    "sass": "sass ../CSS/projet3.scss ../CSS/projet3.css",
+    "watch:sass": "sass --watch ../CSS/projet3.scss ../CSS/projet3.css"
   },
   "author": "RBRS",
   "license": "ISC",
