@@ -8,5 +8,8 @@
     "watch:sass": "sass --watch ./CSS/projet3.scss ./CSS/projet3.css"
   },
   "author": "RBRS",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass":"^1.54.8"
+  }
 }
