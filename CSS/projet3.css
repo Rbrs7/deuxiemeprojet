@@ -1,3 +1,6 @@
-
+@import url(./sass/base/polices.scss);
+body {
+  font-family: "robotoregular";
+}
 
 /*# sourceMappingURL=projet3.css.map */
