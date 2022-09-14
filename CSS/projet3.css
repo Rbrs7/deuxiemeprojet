@@ -31,8 +31,8 @@
 /* Ajout des îcones */
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?vnlrqs");
-  src: url("fonts/icomoon.eot?vnlrqs#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?vnlrqs") format("truetype"), url("fonts/icomoon.woff?vnlrqs") format("woff"), url("fonts/icomoon.svg?vnlrqs#icomoon") format("svg");
+  src: url("../../../images/iconeP3/fonts/icomoon.eot");
+  src: url("../../../images/iconeP3/fonts/icomoon.eot") format("embedded-opentype"), url("../../../images/iconeP3/fonts/icomoon.ttf") format("truetype"), url("../../../images/iconeP3/fonts/icomoon.woff") format("woff"), url("../../../images/iconeP3/fonts/icomoon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -111,7 +111,7 @@
 /* Mixins*/
 body {
   font-family: "robotoregular";
-  max-width: 768px;
+  width: auto;
 }
 
 .head-logo {
@@ -157,9 +157,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 12%;
-  margin-left: 15%;
-  margin-right: 15%;
+  padding-bottom: 12%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .head-subtitle {
   font-family: "robotoitalic";
@@ -180,7 +180,7 @@ body {
   box-shadow: 0px 5px 11px -2px rgba(127, 127, 127, 0.71);
 }
 
-nav a:visited {
+a:visited {
   color: black;
 }
 
@@ -188,12 +188,135 @@ a:link {
   text-decoration: none;
 }
 
-nav ul {
+ul {
   list-style-type: none;
 }
 
 .icon-number {
   font-size: 30px;
+  color: #9356DC;
+  margin-top: 20px;
+}
+
+.icon-number1 {
+  font-size: 30px;
+  color: #9356DC;
+  margin-top: 20px;
+}
+
+.icon-number2 {
+  font-size: 30px;
+  color: #9356DC;
+  margin-top: 20px;
+}
+
+.icon-tablet, .icon-list-bullet, .icon-store-front {
+  font-size: 20px;
+  color: rgba(73, 72, 72, 0.8);
+  margin-right: 20px;
+}
+
+.icon-heart {
+  font-size: 22px;
+}
+
+.nav h1 {
+  font-size: 1.4em;
+  margin-bottom: 10%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav-container1 {
+  padding-left: 8%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgba(233, 233, 233, 0.8);
+  border-radius: 20px;
+  border: 0px solid #FFFFFF;
+  box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+  margin-bottom: 7%;
+}
+.nav-container2 {
+  padding-left: 8%;
+  padding-right: 25%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgba(233, 233, 233, 0.8);
+  border-radius: 20px;
+  border: 0px solid #FFFFFF;
+  box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+  margin-bottom: 7%;
+}
+.nav-container3 {
+  padding-left: 8%;
+  padding-right: 24%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgba(233, 233, 233, 0.8);
+  border-radius: 20px;
+  border: 0px solid #FFFFFF;
+  box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+  margin-bottom: 25%;
+}
+.nav-group1 {
+  display: flex;
+}
+.nav-group2 {
+  display: flex;
+}
+.nav-group3 {
+  display: flex;
+}
+
+article {
+  background-color: rgba(246, 246, 246, 0.8);
+  margin: -5px;
+  padding-top: 7%;
+}
+article h1 {
+  margin: 5%;
+}
+
+.article {
+  padding: 7%;
+}
+.article-background1 {
+  background-color: white;
+  box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.article__img1 {
+  object-fit: cover;
+  border-radius: 20px;
+}
+.article__group1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+  margin-top: -10px;
+  margin-bottom: -5px;
+}
+.article__icon1 {
+  display: flex;
+  align-items: flex-end;
+}
+.article__heart {
+  margin-left: 130px;
+}
+.article__group1 h2 {
+  font-family: "robotobold";
+  font-size: 1.1em;
+}
+.article__group1 p {
+  margin-top: -10px;
 }
 
 /*# sourceMappingURL=projet3.css.map */

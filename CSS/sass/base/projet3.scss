@@ -43,11 +43,11 @@
 /* Ajout des îcones */
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?vnlrqs');
-    src:  url('fonts/icomoon.eot?vnlrqs#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?vnlrqs') format('truetype'),
-      url('fonts/icomoon.woff?vnlrqs') format('woff'),
-      url('fonts/icomoon.svg?vnlrqs#icomoon') format('svg');
+    src:  url('../../../images/iconeP3/fonts/icomoon.eot');
+    src:  url('../../../images/iconeP3/fonts/icomoon.eot') format('embedded-opentype'),
+      url('../../../images/iconeP3/fonts/icomoon.ttf') format('truetype'),
+      url('../../../images/iconeP3/fonts/icomoon.woff') format('woff'),
+      url('../../../images/iconeP3/fonts/icomoon.svg') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -119,6 +119,7 @@ $tertiary: #99E2D0;
 $background: rgba(233, 233, 233, 0.8);
 $color-ico: rgba(37, 36, 36, 0.8);
 $size-ico: 18px;
+$box-shadow-btn: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
 
 /* Mixins*/
 @mixin background-light {
@@ -127,7 +128,7 @@ $size-ico: 18px;
 
 body {
     font-family: 'robotoregular';
-    max-width: 768px;
+    width: auto;
 }
 
 .head-logo {
@@ -174,9 +175,9 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 12%;
-        margin-left: 15%;
-        margin-right: 15%;
+        padding-bottom: 12%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
     &-subtitle {
@@ -200,7 +201,7 @@ body {
     }
 }
 
-nav a:visited{
+a:visited{
     color: black;
 }
 
@@ -208,10 +209,148 @@ a:link{
     text-decoration: none;
 }
 
-nav ul{
+ul{
     list-style-type: none;
 }
 
 .icon-number{
     font-size: 30px;
+    color: $primary;
+    margin-top: 20px;
+}
+
+.icon-number1{
+    font-size: 30px;
+    color: $primary;
+    margin-top: 20px;
+}
+
+.icon-number2{
+    font-size: 30px;
+    color: $primary;
+    margin-top: 20px;
+}
+
+.icon-tablet, .icon-list-bullet, .icon-store-front{
+    font-size: $size-ico+2px;
+    color: rgba(73, 72, 72, 0.8);
+    margin-right: 20px;
+}
+
+.icon-heart{
+    font-size: $size-ico+4px;
+}
+
+.nav h1{
+    font-size: 1.4em;
+    margin-bottom: 10%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+
+    &-container1{
+        padding-left: 8%;
+        padding-right: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: $background;
+        border-radius: 20px;
+        border: 0px solid #FFFFFF;
+        box-shadow: $box-shadow-btn;
+        margin-bottom: 7%;
+    }
+    &-container2{
+        padding-left: 8%;
+        padding-right: 25%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: $background;
+        border-radius: 20px;
+        border: 0px solid #FFFFFF;
+        box-shadow: $box-shadow-btn;
+        margin-bottom: 7%;
+    }
+
+    &-container3{
+        padding-left: 8%;
+        padding-right: 24%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: $background;
+        border-radius: 20px;
+        border: 0px solid #FFFFFF;
+        box-shadow: $box-shadow-btn;
+        margin-bottom: 25%;
+    }
+
+    &-group1{
+        display: flex;
+    }
+
+    &-group2{
+        display: flex;
+    }
+
+    &-group3{
+        display: flex;
+    }
+
+}
+
+article{
+    @include background-light;
+    margin: -5px;
+    padding-top: 7%;
+    
+    & h1{
+        margin: 5%;
+    }
+
+}
+
+.article{
+    padding: 7%;
+
+    &-background1{
+        background-color: white;
+        box-shadow: $box-shadow-btn;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    &__img1{
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    &__group1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+        margin-top: -10px;
+        margin-bottom: -5px;
+    }
+
+    &__icon1{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__heart{
+        margin-left: 130px;
+    }
+
+    &__group1 h2{
+        font-family: 'robotobold';
+        font-size: 1.1em;
+    }
+
+    &__group1 p{
+        margin-top: -10px;
+    }
 }
