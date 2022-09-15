@@ -145,10 +145,11 @@ body {
 }
 
 .head {
-  background-color: rgba(246, 246, 246, 0.8);
+  background-color: rgba(241, 241, 241, 0.8);
   margin: -14px;
   padding-top: 8%;
   padding-bottom: 1%;
+  margin-bottom: 30px;
 }
 .head-title {
   font-family: "robotoregular";
@@ -234,7 +235,7 @@ ul {
   padding-right: 21%;
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: rgba(233, 233, 233, 0.8);
+  background-color: rgba(241, 241, 241, 0.8);
   border-radius: 20px;
   border: 0px solid #FFFFFF;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
@@ -245,7 +246,7 @@ ul {
   padding-right: 25%;
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: rgba(233, 233, 233, 0.8);
+  background-color: rgba(241, 241, 241, 0.8);
   border-radius: 20px;
   border: 0px solid #FFFFFF;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
@@ -256,7 +257,7 @@ ul {
   padding-right: 24%;
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: rgba(233, 233, 233, 0.8);
+  background-color: rgba(241, 241, 241, 0.8);
   border-radius: 20px;
   border: 0px solid #FFFFFF;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
@@ -273,12 +274,14 @@ ul {
 }
 
 article {
-  background-color: rgba(246, 246, 246, 0.8);
+  background-color: rgba(241, 241, 241, 0.8);
   margin: -5px;
   padding-top: 7%;
+  margin-bottom: 8%;
 }
 article h1 {
   margin: 5%;
+  margin-bottom: -1%;
 }
 
 .article {

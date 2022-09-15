@@ -123,7 +123,7 @@ $box-shadow-btn: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
 
 /* Mixins*/
 @mixin background-light {
-    background-color: lighten($background, 5%);
+    background-color: lighten($background, 3%);
 }
 
 @mixin box {
@@ -185,6 +185,7 @@ body {
     margin: -14px;
     padding-top: 8%;
     padding-bottom: 1%;
+    margin-bottom: 30px;
 
     &-title {
         font-family: 'robotoregular';
@@ -273,18 +274,19 @@ ul{
         padding-right: 21%;
         padding-top: 5%;
         padding-bottom: 5%;
-        background-color: $background;
+        @include background-light;
         border-radius: 20px;
         border: 0px solid #FFFFFF;
         box-shadow: $box-shadow-btn;
         margin-bottom: 7%;
     }
+
     &-container2{
         padding-left: 8%;
         padding-right: 25%;
         padding-top: 5%;
         padding-bottom: 5%;
-        background-color: $background;
+        @include background-light;
         border-radius: 20px;
         border: 0px solid #FFFFFF;
         box-shadow: $box-shadow-btn;
@@ -296,7 +298,7 @@ ul{
         padding-right: 24%;
         padding-top: 5%;
         padding-bottom: 5%;
-        background-color: $background;
+        @include background-light;
         border-radius: 20px;
         border: 0px solid #FFFFFF;
         box-shadow: $box-shadow-btn;
@@ -321,9 +323,11 @@ article{
     @include background-light;
     margin: -5px;
     padding-top: 7%;
+    margin-bottom: 8%;
     
     & h1{
         margin: 5%;
+        margin-bottom: -1%;
     }
 
 }
