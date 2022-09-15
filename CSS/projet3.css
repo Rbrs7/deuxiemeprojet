@@ -3,36 +3,36 @@
 /* logo et titre */
 @font-face {
   font-family: "shrikhand";
-  src: url("../CSS/polices/shrikhand/shrikhand-regular-webfont.woff2") format("woff2"), url("../CSS/polices/shrikhand/shrikhand-regular-webfont.woff") format("woff"), url("../CSS/polices/shrikhand/shrikhand-regular-webfont.ttf") format("truetype");
+  src: url("/css/polices/shrikhand/shrikhand-regular-webfont.woff2") format("woff2"), url("/css/polices/shrikhand/shrikhand-regular-webfont.woff") format("woff"), url("/css/polices/shrikhand/shrikhand-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 /* Texte regular*/
 @font-face {
   font-family: "robotoregular";
-  src: url("../CSS/polices/roboto/regular/roboto-regular-webfont.woff2") format("woff2"), url("../CSS/polices/roboto/regular/roboto-regular-webfont.woff") format("woff"), url("../CSS/polices/roboto/regular/Roboto-Regular.ttf") format("truetype");
+  src: url("/css/polices/roboto/regular/roboto-regular-webfont.woff2") format("woff2"), url("/css/polices/roboto/regular/roboto-regular-webfont.woff") format("woff"), url("/css/polices/roboto/regular/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 /* Texte italic */
 @font-face {
   font-family: "robotoitalic";
-  src: url("../CSS/polices/roboto/italic/roboto-italic-webfont.woff2") format("woff2"), url("../CSS/polices/roboto/italic/roboto-italic-webfont.woff") format("woff"), url("../CSS/polices/roboto/italic/Roboto-Italic.ttf") format("truetype");
+  src: url("/css/polices/roboto/italic/roboto-italic-webfont.woff2") format("woff2"), url("/css/polices/roboto/italic/roboto-italic-webfont.woff") format("woff"), url("/css/polices/roboto/italic/Roboto-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 /* Texte bold */
 @font-face {
   font-family: "robotobold";
-  src: url("../CSS/polices/roboto/bold/roboto-bold-webfont.woff2") format("woff2"), url("../CSS/polices/roboto/bold/roboto-bold-webfont.woff") format("woff"), url("../CSS/polices/roboto/bold/Roboto-Bold.ttf") format("truetype");
+  src: url("/css/polices/roboto/bold/roboto-bold-webfont.woff2") format("woff2"), url("/css/polices/roboto/bold/roboto-bold-webfont.woff") format("woff"), url("/css/polices/roboto/bold/Roboto-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 /* Ajout des îcones */
 @font-face {
   font-family: "icomoon";
-  src: url("../../../images/iconeP3/fonts/icomoon.eot");
-  src: url("../../../images/iconeP3/fonts/icomoon.eot") format("embedded-opentype"), url("../../../images/iconeP3/fonts/icomoon.ttf") format("truetype"), url("../../../images/iconeP3/fonts/icomoon.woff") format("woff"), url("../../../images/iconeP3/fonts/icomoon.svg") format("svg");
+  src: url("/css/polices/icone/fonts/icomoon.eot");
+  src: url("/css/polices/icone/fonts/icomoon.eot") format("embedded-opentype"), url("/css/polices/icone/fonts/icomoon.ttf") format("truetype"), url("/css/polices/icone/fonts/icomoon.woff") format("woff"), url("/css/polices/icone/fonts/icomoon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -40,7 +40,6 @@
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -179,6 +178,7 @@ body {
   border-radius: 35px;
   border: 0px solid #FFFFFF;
   box-shadow: 0px 5px 11px -2px rgba(127, 127, 127, 0.71);
+  cursor: pointer;
 }
 
 a:visited {
@@ -194,21 +194,27 @@ ul {
 }
 
 .icon-number {
+  position: relative;
+  top: 44px;
+  right: 20px;
   font-size: 30px;
   color: #9356DC;
-  margin-top: 20px;
 }
 
 .icon-number1 {
+  position: relative;
+  top: 44px;
+  right: 20px;
   font-size: 30px;
   color: #9356DC;
-  margin-top: 20px;
 }
 
 .icon-number2 {
+  position: relative;
+  top: 44px;
+  right: 20px;
   font-size: 30px;
   color: #9356DC;
-  margin-top: 20px;
 }
 
 .icon-tablet, .icon-list-bullet, .icon-store-front {
@@ -229,6 +235,9 @@ ul {
 .nav {
   display: flex;
   flex-direction: column;
+}
+.nav h1 {
+  margin-bottom: -5px;
 }
 .nav-container1 {
   padding-left: 8%;
@@ -263,14 +272,9 @@ ul {
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   margin-bottom: 25%;
 }
-.nav-group1 {
-  display: flex;
-}
-.nav-group2 {
-  display: flex;
-}
-.nav-group3 {
-  display: flex;
+.nav-group {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 article {
@@ -295,12 +299,12 @@ article h1 {
   flex-direction: column;
   margin-bottom: 20px;
 }
-.article__img1 {
+.article-image1 {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.article__group1 {
+.article-group1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -308,18 +312,18 @@ article h1 {
   margin-top: -10px;
   margin-bottom: -5px;
 }
-.article__icon1 {
+.article-icon1 {
   display: flex;
   align-items: flex-end;
 }
-.article__heart {
+.article-heart {
   margin-left: 120px;
 }
-.article__group1 h2 {
+.article-group1 h2 {
   font-family: "robotobold";
   font-size: 1.1em;
 }
-.article__group1 p {
+.article-group1 p {
   margin-top: -10px;
 }
 .article-background2 {
@@ -330,12 +334,12 @@ article h1 {
   flex-direction: column;
   margin-bottom: 20px;
 }
-.article__img2 {
+.article-image2 {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.article__group2 {
+.article-group2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -343,15 +347,15 @@ article h1 {
   margin-top: -10px;
   margin-bottom: -5px;
 }
-.article__icon2 {
+.article-icon2 {
   display: flex;
   align-items: flex-end;
 }
-.article__group2 h2 {
+.article-group2 h2 {
   font-family: "robotobold";
   font-size: 1.1em;
 }
-.article__group2 p {
+.article-group2 p {
   margin-top: -10px;
 }
 .article-background3 {
@@ -362,12 +366,12 @@ article h1 {
   flex-direction: column;
   margin-bottom: 20px;
 }
-.article__img3 {
+.article-image3 {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.article__group3 {
+.article-group3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -375,18 +379,18 @@ article h1 {
   margin-top: -10px;
   margin-bottom: -5px;
 }
-.article__icon3 {
+.article-icon3 {
   display: flex;
   align-items: flex-end;
 }
-.article__heart2 {
+.article-heart2 {
   margin-left: 156px;
 }
-.article__group3 h2 {
+.article-group3 h2 {
   font-family: "robotobold";
   font-size: 1.1em;
 }
-.article__group3 p {
+.article-group3 p {
   margin-top: -10px;
 }
 .article-background4 {
@@ -397,12 +401,12 @@ article h1 {
   flex-direction: column;
   margin-bottom: 20px;
 }
-.article__img4 {
+.article-image4 {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.article__group4 {
+.article-group4 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -410,15 +414,15 @@ article h1 {
   margin-top: -10px;
   margin-bottom: -5px;
 }
-.article__icon4 {
+.article-icon4 {
   display: flex;
   align-items: flex-end;
 }
-.article__group4 h2 {
+.article-group4 h2 {
   font-family: "robotobold";
   font-size: 1.1em;
 }
-.article__group4 p {
+.article-group4 p {
   margin-top: -10px;
 }
 

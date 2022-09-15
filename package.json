@@ -1,0 +1,17 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass ./css/sass/base/projet3.scss ./css/projet3.css",
+    "watch:sass": "sass --watch ./css/sass/base/projet3.scss ./css/projet3.css",
+    "prefix": "postcss ./css/projet3.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "author": "RBRS",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "devDependencies": {
+    "sass":"^1.54.8"
+  }
+}
