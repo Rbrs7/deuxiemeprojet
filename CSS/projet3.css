@@ -216,7 +216,9 @@ ul {
   color: #9356DC;
 }
 
-.icon-tablet, .icon-list-bullet, .icon-store-front {
+.icon-tablet,
+.icon-list-bullet,
+.icon-store-front {
   font-size: 20px;
   color: rgba(73, 72, 72, 0.8);
   margin-right: 20px;
@@ -281,6 +283,8 @@ article {
   margin: -5px;
   padding-top: 7%;
   margin-bottom: 8%;
+  margin-top: -20px;
+  padding-bottom: 1%;
 }
 article h1 {
   margin: 5%;
@@ -434,7 +438,8 @@ footer {
   margin-left: -8px;
   margin-right: -8px;
 }
-footer a, footer a:visited {
+footer a,
+footer a:visited {
   color: white;
 }
 footer img {
@@ -454,6 +459,104 @@ footer li {
 
 .icon-user-add {
   margin-right: 5px;
+}
+
+/* Page "à la française" */
+.head-img {
+  object-fit: cover;
+  margin-top: 10px;
+  margin-left: -8px;
+}
+
+.head-container {
+  font-family: "shrikhand";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  font-size: 0.8em;
+  padding: 25px;
+  position: relative;
+  margin-top: -20px;
+  margin-left: -15px;
+  margin-right: -10px;
+  border-radius: 40px;
+}
+
+.menu {
+  margin-left: 10px;
+  margin-top: -40px;
+}
+.menu h1 {
+  font-family: "robotoregular";
+  font-weight: 100;
+  font-size: 1em;
+  margin-left: 0px;
+  border-bottom: solid 3px #99E2D0;
+  width: 40px;
+  margin-top: 12%;
+  margin-bottom: 15px;
+}
+.menu-container {
+  font-size: 0.8em;
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+  cursor: pointer;
+}
+.menu-container h2 {
+  margin-left: 18px;
+}
+.menu-prix {
+  font-family: "robotobold";
+}
+.menu-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu-container2 {
+  font-size: 0.8em;
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 80px;
+  margin-right: 10px;
+  box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+  cursor: pointer;
+}
+.menu-container2 h2 {
+  margin-left: 18px;
+}
+.menu-btn {
+  position: relative;
+  bottom: 25px;
+  left: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 8%;
+  padding: 14px;
+  width: 85%;
+  font-family: "robotoregular";
+  font-size: 1.5em;
+  color: #FFFFFF;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 35px;
+  border: 0px solid #FFFFFF;
+  box-shadow: 0px 5px 11px -2px rgba(127, 127, 127, 0.71);
+  cursor: pointer;
+  width: 53%;
+  padding: 12px;
+  font-size: 1.1em;
+  box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
 }
 
 /*# sourceMappingURL=projet3.css.map */

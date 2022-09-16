@@ -9,12 +9,7 @@ body {
 }
 
 .head-logo {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    padding-top: 25px;
-    padding-bottom: 10px;
-    margin: -10px;
+    @include header-logo;
 }
 
 .head-loc {
@@ -39,7 +34,7 @@ body {
 
 }
 
-.head{
+.head {
     @include background-light;
     margin: -14px;
     padding-top: 8%;
@@ -80,54 +75,56 @@ body {
     }
 }
 
-a:visited{
+a:visited {
     color: black;
 }
 
-a:link{
+a:link {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-.icon-number{
+.icon-number {
     @include icon-number;
 }
 
-.icon-number1{
+.icon-number1 {
     @include icon-number;
 }
 
-.icon-number2{
+.icon-number2 {
     @include icon-number;
 }
 
-.icon-tablet, .icon-list-bullet, .icon-store-front{
+.icon-tablet,
+.icon-list-bullet,
+.icon-store-front {
     font-size: $size-ico+2px;
     color: rgba(73, 72, 72, 0.8);
     margin-right: 20px;
 }
 
-.icon-heart{
+.icon-heart {
     font-size: $size-ico+4px;
 }
 
-.nav h1{
+.nav h1 {
     font-size: 1.4em;
     margin-bottom: 10%;
 }
 
-.nav{
+.nav {
     display: flex;
     flex-direction: column;
 
-    & h1{
+    & h1 {
         margin-bottom: -5px;
     }
 
-    &-container1{
+    &-container1 {
         padding-left: 8%;
         padding-right: 21%;
         padding-top: 5%;
@@ -139,7 +136,7 @@ ul{
         margin-bottom: 2%;
     }
 
-    &-container2{
+    &-container2 {
         padding-left: 8%;
         padding-right: 25%;
         padding-top: 5%;
@@ -151,7 +148,7 @@ ul{
         margin-bottom: 2%;
     }
 
-    &-container3{
+    &-container3 {
         padding-left: 8%;
         padding-right: 24%;
         padding-top: 5%;
@@ -163,142 +160,144 @@ ul{
         margin-bottom: 20%;
     }
 
-    &-group{
+    &-group {
         margin-left: 15px;
         margin-right: 15px;
     }
 }
 
-article{
+article {
     @include background-light;
     margin: -5px;
     padding-top: 7%;
     margin-bottom: 8%;
-    
-    & h1{
+    margin-top: -20px;
+    padding-bottom: 1%;
+
+    & h1 {
         margin: 5%;
         margin-bottom: -1%;
     }
 
 }
 
-.article{
+.article {
     padding: 7%;
 
-    &-background1{
+    &-background1 {
         @include background-box;
     }
 
-    &-image1{
+    &-image1 {
         @include images-card;
     }
 
-    &-group1{
+    &-group1 {
         @include box;
     }
 
-    &-icon1{
+    &-icon1 {
         display: flex;
         align-items: flex-end;
     }
 
-    &-heart{
+    &-heart {
         margin-left: 120px;
     }
 
-    &-group1 h2{
+    &-group1 h2 {
         font-family: 'robotobold';
         font-size: 1.1em;
     }
 
-    &-group1 p{
+    &-group1 p {
         margin-top: -10px;
     }
 
-    &-background2{
+    &-background2 {
         @include background-box;
     }
 
-    &-image2{
+    &-image2 {
         @include images-card;
     }
 
-    &-group2{
+    &-group2 {
         @include box;
     }
 
-    &-icon2{
+    &-icon2 {
         display: flex;
         align-items: flex-end;
     }
 
-    &-group2 h2{
+    &-group2 h2 {
         font-family: 'robotobold';
         font-size: 1.1em;
     }
 
-    &-group2 p{
+    &-group2 p {
         margin-top: -10px;
     }
 
-    &-background3{
+    &-background3 {
         @include background-box;
     }
 
-    &-image3{
+    &-image3 {
         @include images-card;
     }
 
-    &-group3{
+    &-group3 {
         @include box;
     }
 
-    &-icon3{
+    &-icon3 {
         display: flex;
         align-items: flex-end;
     }
 
-    &-heart2{
+    &-heart2 {
         margin-left: 156px;
     }
 
-    &-group3 h2{
+    &-group3 h2 {
         font-family: 'robotobold';
         font-size: 1.1em;
     }
 
-    &-group3 p{
+    &-group3 p {
         margin-top: -10px;
     }
 
-    &-background4{
+    &-background4 {
         @include background-box;
     }
 
-    &-image4{
+    &-image4 {
         @include images-card;
     }
 
-    &-group4{
+    &-group4 {
         @include box;
     }
 
-    &-icon4{
+    &-icon4 {
         display: flex;
         align-items: flex-end;
     }
 
-    &-group4 h2{
+    &-group4 h2 {
         font-family: 'robotobold';
         font-size: 1.1em;
     }
 
-    &-group4 p{
+    &-group4 p {
         margin-top: -10px;
     }
 }
 
-footer{
+footer {
     background-color: $color-footer;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -307,27 +306,118 @@ footer{
     margin-left: -8px;
     margin-right: -8px;
 
-    & a, a:visited{
+    & a,
+    a:visited {
         color: white;
     }
 
-    & img{
+    & img {
         filter: invert(1);
     }
 
-    & li{
+    & li {
         padding-top: 5px;
     }
 }
 
-.foot-logo{
+.foot-logo {
     margin-left: 38px;
 }
 
-.icon-location-food{
+.icon-location-food {
     margin-right: 5px;
 }
 
-.icon-user-add{
+.icon-user-add {
     margin-right: 5px;
+}
+
+/* Page "à la française" */
+
+.head-img {
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: -8px;
+}
+
+.head-container {
+    font-family: 'shrikhand';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include background-light2;
+    font-size: 0.8em;
+    padding: 25px;
+    position: relative;
+    margin-top: -20px;
+    margin-left: -15px;
+    margin-right: -10px;
+    border-radius: 40px;
+}
+
+.menu {
+    margin-left: 10px;
+    margin-top: -40px;
+
+    & h1 {
+        font-family: 'robotoregular';
+        font-weight: 100;
+        font-size: 1em;
+        margin-left: 0px;
+        border-bottom: solid 3px $tertiary;
+        width: 40px;
+        margin-top: 12%;
+        margin-bottom: 15px;
+    }
+
+    &-container{
+        font-size: 0.8em;
+        background-color: white;
+        border-radius: 20px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        box-shadow: $box-shadow-btn;
+        cursor: pointer;  
+    }
+
+    &-container h2{
+        margin-left: 18px;
+    }
+
+    &-prix{
+        font-family: 'robotobold';
+    }
+
+    &-flex{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &-container2{
+        @include container-annexe;
+    }
+
+    &-container2 h2{
+        margin-left: 18px;
+    }
+
+    &-btn{
+        position: relative;
+        bottom: 25px;
+        left: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        @include btn-1;
+        width: 53%;
+        padding: 12px;
+        font-size: 1.1em;
+        box-shadow: $box-shadow-btn;
+    }
+
 }

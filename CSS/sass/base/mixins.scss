@@ -3,6 +3,25 @@
     background-color: lighten($background, 3%);
 }
 
+@mixin background-light2 {
+    background-color: lighten($background2, 3%);
+}
+
+@mixin btn-1 {
+    margin-left: 8%;
+    padding: 14px;
+    width: 85%;
+    font-family: 'robotoregular';
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background: linear-gradient($secondary, $primary);
+    border-radius: 35px;
+    border: 0px solid #FFFFFF;
+    box-shadow: 0px 5px 11px -2px rgba(127, 127, 127, 0.71);
+    cursor: pointer;
+}
+
+
 @mixin box {
     display: flex;
     flex-direction: column;
@@ -33,4 +52,25 @@
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+@mixin header-logo {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin: -10px;
+}
+
+@mixin container-annexe{
+    font-size: 0.8em;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 80px;
+    margin-right: 10px;
+    box-shadow: $box-shadow-btn;
+    cursor: pointer;
 }
