@@ -179,6 +179,11 @@ body {
   box-shadow: 0px 5px 11px -2px rgba(127, 127, 127, 0.71);
   cursor: pointer;
 }
+.head-btn:hover {
+  transition: background 2s ease-out;
+  background: linear-gradient(#ff93e1, #9356DC);
+  box-shadow: 1px 5px 12px -1px rgba(63, 63, 63, 0.71);
+}
 
 a:visited {
   color: black;
@@ -557,6 +562,11 @@ footer li {
   padding: 12px;
   font-size: 1.1em;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+}
+.menu-btn:hover {
+  transition: background 2s ease-out;
+  background: linear-gradient(#ff93e1, #9356DC);
+  box-shadow: 1px 5px 12px -1px rgba(63, 63, 63, 0.71);
 }
 
 /*# sourceMappingURL=projet3.css.map */
