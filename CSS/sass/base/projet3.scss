@@ -1,7 +1,7 @@
-@import 'icones';
-@import 'polices';
-@import 'variables';
-@import 'mixins';
+@import './icones';
+@import './polices';
+@import './variables';
+@import './mixins';
 
 body {
     font-family: 'robotoregular';
@@ -75,7 +75,6 @@ body {
     }
 
     &-btn:hover{
-        transition: background 2s ease-out;
         background: linear-gradient(lighten($secondary, 5%),$primary);
         box-shadow: 1px 5px 12px -1px darken($box-shadow-color, 50%);
     }

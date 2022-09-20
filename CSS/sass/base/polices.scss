@@ -3,9 +3,9 @@
 /* logo et titre */
 @font-face {
   font-family: 'shrikhand';
-  src: url('/css/polices/shrikhand/shrikhand-regular-webfont.woff2') format('woff2'),
-      url('/css/polices/shrikhand/shrikhand-regular-webfont.woff') format('woff'),
-      url('/css/polices/shrikhand/shrikhand-regular-webfont.ttf') format('truetype');
+  src: url('./polices/shrikhand/shrikhand-regular-webfont.woff2') format('woff2'),
+      url('./polices/shrikhand/shrikhand-regular-webfont.woff') format('woff'),
+      url('./polices/shrikhand/shrikhand-regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,9 +13,9 @@
 /* Texte regular*/
 @font-face {
   font-family: 'robotoregular';
-  src: url('/css/polices/roboto/regular/roboto-regular-webfont.woff2') format('woff2'),
-      url('/css/polices/roboto/regular/roboto-regular-webfont.woff') format('woff'),
-      url('/css/polices/roboto/regular/Roboto-Regular.ttf') format('truetype');
+  src: url('./polices/roboto/regular/roboto-regular-webfont.woff2') format('woff2'),
+      url('./polices/roboto/regular/roboto-regular-webfont.woff') format('woff'),
+      url('./polices/roboto/regular/Roboto-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,9 +23,9 @@
 /* Texte italic */
 @font-face {
   font-family: 'robotoitalic';
-  src: url('/css/polices/roboto/italic/roboto-italic-webfont.woff2') format('woff2'),
-      url('/css/polices/roboto/italic/roboto-italic-webfont.woff') format('woff'),
-      url('/css/polices/roboto/italic/Roboto-Italic.ttf') format('truetype');
+  src: url('./polices/roboto/italic/roboto-italic-webfont.woff2') format('woff2'),
+      url('./polices/roboto/italic/roboto-italic-webfont.woff') format('woff'),
+      url('./polices/roboto/italic/Roboto-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,9 +33,9 @@
 /* Texte bold */
 @font-face {
   font-family: 'robotobold';
-  src: url('/css/polices/roboto/bold/roboto-bold-webfont.woff2') format('woff2'),
-      url('/css/polices/roboto/bold/roboto-bold-webfont.woff') format('woff'),
-      url('/css/polices/roboto/bold/Roboto-Bold.ttf') format('truetype');
+  src: url('./polices/roboto/bold/roboto-bold-webfont.woff2') format('woff2'),
+      url('./polices/roboto/bold/roboto-bold-webfont.woff') format('woff'),
+      url('./polices/roboto/bold/Roboto-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
