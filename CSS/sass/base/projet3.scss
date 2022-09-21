@@ -113,8 +113,32 @@ ul {
     margin-right: 20px;
 }
 
-.icon-heart {
+.anim-heart{
+    position: relative;
+    cursor: pointer;
+}
+
+.icon-heart-regular{
     font-size: $size-ico+4px;
+}
+
+.anim-heart span{
+    font-size: $size-ico;
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+}
+
+.icon-heart-solid{
+    opacity: 0;
+    transition: transform 200ms ease-out;
+    transform: scale(0.55);
+}
+
+.icon-heart-solid:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
 }
 
 .nav h1 {

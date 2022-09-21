@@ -11,6 +11,7 @@
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -19,6 +20,14 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart-solid:before {
+  content: "\e900";
+}
+
+.icon-heart-regular:before {
+  content: "\e90e";
 }
 
 .icon-number3:before {
@@ -43,10 +52,6 @@
 
 .icon-number2:before {
   content: "\e90a";
-}
-
-.icon-heart:before {
-  content: "\e900";
 }
 
 .icon-checkmark-outline:before {
@@ -228,8 +233,32 @@ ul {
   margin-right: 20px;
 }
 
-.icon-heart {
+.anim-heart {
+  position: relative;
+  cursor: pointer;
+}
+
+.icon-heart-regular {
   font-size: 22px;
+}
+
+.anim-heart span {
+  font-size: 18px;
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+}
+
+.icon-heart-solid {
+  opacity: 0;
+  transition: transform 200ms ease-out;
+  transform: scale(0.55);
+}
+
+.icon-heart-solid:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  color: red;
 }
 
 .nav h1 {
