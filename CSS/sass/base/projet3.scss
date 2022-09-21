@@ -439,7 +439,7 @@ footer {
     &-btn{
         position: relative;
         bottom: 25px;
-        left: 50px;
+        left: 55px;
         margin-bottom: 50px;
         display: flex;
         justify-content: center;
@@ -451,9 +451,59 @@ footer {
     }
 
     &-btn:hover{
-        transition: background 2s ease-out;
         background: linear-gradient(lighten($secondary, 5%),$primary);
         box-shadow: 1px 5px 12px -1px darken($box-shadow-color, 50%);
     }
 
+}
+
+
+.menu-anim1{
+    opacity: 0;
+    animation-name: apparition;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+}
+
+.menu-anim2{
+    opacity: 0;
+    animation-name: apparition;
+    animation-duration: 1000ms;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.menu-anim3{
+    opacity: 0;
+    animation-name: apparition;
+    animation-duration: 1000ms;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes apparition {
+    0%{
+        opacity: 0;
+    }
+
+    17%{
+        opacity: .1;
+    }
+
+    24%{
+        opacity: .3;
+    }
+
+    46%{
+        opacity: .5;
+    }
+
+    88%{
+        opacity: .8;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
 }
