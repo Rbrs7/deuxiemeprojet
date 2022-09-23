@@ -596,13 +596,14 @@ footer li {
   box-shadow: 1px 5px 12px -1px rgba(63, 63, 63, 0.71);
 }
 
+/* Animation apparition du menu */
 .menu-anim1 {
   opacity: 0;
   animation-name: apparition;
   animation-duration: 800ms;
   animation-fill-mode: both;
   transform: translateY(-20px);
-  transition: transform 100ms ease-out 50ms;
+  transition: transform 100ms ease-in-out 50ms;
 }
 
 .menu-anim2 {
@@ -612,7 +613,7 @@ footer li {
   animation-delay: 0.8s;
   animation-fill-mode: both;
   transform: translateY(-20px);
-  transition: transform 100ms ease-out 50ms;
+  transition: transform 100ms ease-in-out 50ms;
 }
 
 .menu-anim3 {
@@ -622,7 +623,7 @@ footer li {
   animation-delay: 1.6s;
   animation-fill-mode: both;
   transform: translateY(-20px);
-  transition: transform 100ms ease-out 50ms;
+  transition: transform 100ms ease-in-out 50ms;
 }
 
 @keyframes apparition {
@@ -632,15 +633,15 @@ footer li {
   }
   15% {
     opacity: 0.1;
-    transform: translateY(-15px);
+    transform: translateY(-16px);
   }
   25% {
-    opacity: 0.3;
-    transform: translateY(-10px);
+    opacity: 0.2;
+    transform: translateY(-11px);
   }
   45% {
     opacity: 0.4;
-    transform: translateY(-5px);
+    transform: translateY(-2px);
   }
   85% {
     opacity: 0.8;
@@ -649,6 +650,51 @@ footer li {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/* Animation loading spinner */
+.loader {
+  /* Création du loader */
+  border: 10px solid #FFFFFF;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-right: 10px solid #FFFFFF;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1.5s linear infinite;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  /* Placement loader */
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.bloc-page {
+  opacity: 0;
+  animation: load_page 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes load_page {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
