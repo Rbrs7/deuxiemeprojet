@@ -560,7 +560,7 @@ footer {
     opacity: 0;
     animation: load_page 1s;
     animation-delay: 1.5s;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
 }
 
 @keyframes load_page{
