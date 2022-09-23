@@ -461,49 +461,61 @@ footer {
 .menu-anim1{
     opacity: 0;
     animation-name: apparition;
-    animation-duration: 1000ms;
+    animation-duration: 800ms;
     animation-fill-mode: both;
+    transform: translateY(-20px);
+    transition: transform 100ms ease-out 50ms;
 }
 
 .menu-anim2{
     opacity: 0;
     animation-name: apparition;
-    animation-duration: 1000ms;
-    animation-delay: 1s;
+    animation-duration: 800ms;
+    animation-delay: 0.8s;
     animation-fill-mode: both;
+    transform: translateY(-20px);
+    transition: transform 100ms ease-out 50ms;
 }
 
 .menu-anim3{
     opacity: 0;
     animation-name: apparition;
-    animation-duration: 1000ms;
-    animation-delay: 2s;
+    animation-duration: 800ms;
+    animation-delay: 1.6s;
     animation-fill-mode: both;
+    transform: translateY(-20px);
+    transition: transform 100ms ease-out 50ms;
 }
 
 @keyframes apparition {
     0%{
         opacity: 0;
+        transform: translateY(-20px);
     }
 
-    17%{
+    15%{
         opacity: .1;
+        transform: translateY(-15px);
     }
 
-    24%{
+    25%{
         opacity: .3;
+        transform: translateY(-10px);
     }
 
-    46%{
-        opacity: .5;
+    45%{
+        opacity: .4;
+        transform: translateY(-5px);
     }
 
-    88%{
+    85%{
         opacity: .8;
+        transform: translateY(0px);
     }
 
     100%{
         opacity: 1;
+        transform: translateY(0);
     }
     
 }
