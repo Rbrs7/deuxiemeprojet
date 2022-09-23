@@ -654,6 +654,7 @@ footer li {
 /* Animation loading spinner */
 .loader {
   /* Création du loader */
+  opacity: 0;
   border: 10px solid #FFFFFF;
   border-top: 10px solid #9356DC;
   border-bottom: 10px solid #FF79DA;
@@ -662,8 +663,8 @@ footer li {
   width: 100px;
   height: 100px;
   animation: spin 1.5s linear infinite;
-  opacity: 0;
   transition: opacity 2s ease-in-out;
+  animation-fill-mode: forwards;
   /* Placement loader */
   margin: auto;
   position: absolute;
