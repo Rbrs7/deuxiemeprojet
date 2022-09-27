@@ -525,7 +525,7 @@ footer {
 
 .loader{
     /* Création du loader */
-    opacity: 0;
+    opacity: 1;
     border: 10px solid #FFFFFF;
     border-top: 10px solid $primary;
     border-bottom: 10px solid $secondary;
@@ -534,7 +534,6 @@ footer {
     width : 100px;
     height: 100px;
     animation: spin 1.5s linear infinite;
-    transition: opacity 2s ease-in-out;
     animation-fill-mode: forwards;
     /* Placement loader */
     margin: auto;
@@ -562,6 +561,7 @@ footer {
     animation: load_page 1s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
+    background-color: white;
 }
 
 @keyframes load_page{
