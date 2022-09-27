@@ -493,7 +493,7 @@ footer li {
   margin-right: 5px;
 }
 
-/* Page "à la française" */
+/* Page "menu restaurants" */
 .head-img {
   object-fit: cover;
   margin-top: 10px;
@@ -543,8 +543,17 @@ footer li {
 .menu-container h2 {
   margin-left: 18px;
 }
-.menu-prix {
+.menu-prix1 {
   font-family: "robotobold";
+  margin-left: 40%;
+}
+.menu-prix2 {
+  font-family: "robotobold";
+  margin-left: 25%;
+}
+.menu-prix3 {
+  font-family: "robotobold";
+  margin-left: 17%;
 }
 .menu-flex {
   display: flex;
@@ -595,6 +604,26 @@ footer li {
   box-shadow: 1px 5px 12px -1px rgba(63, 63, 63, 0.71);
 }
 
+.bg-anim {
+  display: flex;
+  align-items: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: -29px;
+  margin-bottom: -1px;
+  margin-right: -20px;
+  padding-left: 17px;
+  transform: translateX(100px);
+}
+
+.icon-checkmark-outline {
+  color: #FFFFFF;
+  font-size: 1.7em;
+  margin-right: 20px;
+}
+
+/* Animation checkmark plats réstaurants */
 /* Animation apparition du menu */
 .menu-anim1 {
   opacity: 0;

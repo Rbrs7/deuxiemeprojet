@@ -418,17 +418,17 @@ footer {
 
     &-prix1{
         font-family: 'robotobold';
-        margin-left: 40%;
+        margin-left: 25%;
     }
 
     &-prix2{
         font-family: 'robotobold';
-        margin-left: 25%;
+        margin-left: 11%;
     }
 
     &-prix3{
         font-family: 'robotobold';
-        margin-left: 17%;
+        margin-left: 5%;
     }
 
     &-flex{
@@ -465,6 +465,7 @@ footer {
         background: linear-gradient(lighten($secondary, 5%),$primary);
         box-shadow: 1px 5px 12px -1px darken($box-shadow-color, 50%);
     }
+
 }
 
 .bg-anim{
