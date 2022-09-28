@@ -113,7 +113,7 @@ ul {
     margin-right: 20px;
 }
 
-.anim-heart{
+.anim-heart, .anim-heart-index{
     position: relative;
     cursor: pointer;
 }
@@ -122,11 +122,16 @@ ul {
     font-size: $size-ico+4px;
 }
 
-.anim-heart span{
+.anim-heart-index span{
     font-size: $size-ico;
     position: absolute;
     bottom: 2px;
-    left: 10px;
+}
+
+.anim-heart span{
+    font-size: $size-ico;
+    position: absolute;
+    bottom: -8px;
 }
 
 .icon-heart-solid{
@@ -385,6 +390,7 @@ footer {
     border-radius: 40px;
 }
 
+
 .menu {
     margin-left: 10px;
     margin-top: -40px;
@@ -401,6 +407,9 @@ footer {
     }
 
     &-container{
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
         font-size: 0.8em;
         background-color: white;
         border-radius: 20px;
@@ -412,31 +421,26 @@ footer {
         cursor: pointer;
     }
 
+    &-soustitre{
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+
+
     &-container h2{
         margin-left: 18px;
     }
 
-    &-prix1{
+    &-prix{
+        position: absolute;
+        right: 25px;
+        bottom: 18px;
         font-family: 'robotobold';
-        margin-left: 40%;
-    }
-
-    &-prix2{
-        font-family: 'robotobold';
-        margin-left: 25%;
-    }
-
-    &-prix3{
-        font-family: 'robotobold';
-        margin-left: 17%;
     }
 
     &-flex{
         display: flex;
         justify-content: space-between;
-        margin-top: -30px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     &-container2{
@@ -468,22 +472,22 @@ footer {
 }
 
 .bg-anim{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    width: 70px;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: $tertiary;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-top: -29px;
-    margin-bottom: -1px;
-    margin-right: -20px;
-    padding-left: 17px;
-    transform: translateX(100px);
+    opacity: 0;
 }
 
 .icon-checkmark-outline{
     color: #FFFFFF;
     font-size: 1.7em;
-    margin-right: 20px;
 }
 
 /* Animation checkmark plats réstaurants */

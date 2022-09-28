@@ -64,6 +64,9 @@
 }
 
 @mixin container-annexe{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
     font-size: 0.8em;
     background-color: white;
     border-radius: 20px;
