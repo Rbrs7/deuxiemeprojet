@@ -205,6 +205,13 @@ article {
 
 }
 
+input[type="radio"] {
+    z-index: -1;
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
 .article {
     padding: 7%;
 
@@ -223,10 +230,6 @@ article {
     &-icon1 {
         display: flex;
         align-items: flex-end;
-    }
-
-    &-heart {
-        margin-left: 120px;
     }
 
     &-group1 h2 {
@@ -281,8 +284,47 @@ article {
         align-items: flex-end;
     }
 
+    &-heart {
+        margin-left: 120px;
+    }
+
+    &-heart label, &-heart2 label, &-heart3 label, &-heart4 label {
+        @include label;
+    }
+    
+    &-heart input[type="radio"]:checked, &-heart2 input[type="radio"]:checked, &-heart3 input[type="radio"]:checked, &-heart4 input[type="radio"]:checked, &-heart5 input[type="radio"]:checked {
+        @include inputradio;
+    }
+    
+    &-heart input[type="radio"]:focus+label, &-heart2 input[type="radio"]:focus+label, &-heart3 input[type="radio"]:focus+label, &-heart4 input[type="radio"]:focus+label, &-heart5 input[type="radio"]:focus+label {
+        @include inputradio;
+    }
+    
+    &-heart label:hover, &-heart2 label:hover, &-heart3 label:hover, &-heart4 label:hover, &-heart5 label:hover {
+        @include inputradio;
+    }
+
     &-heart2 {
-        margin-left: 156px;
+        margin-left: 120px;
+    }
+
+    &-heart3 {
+        margin-left: 157px;
+    }
+    
+    &-heart4 {
+        margin-left: 119px;
+    }
+    
+    &-heart5 label {
+        font-size: 1.4em;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        right: 21px;
+        opacity: 0;
+        transition: transform 100ms ease-out;
+        transform: scale(0.55);
     }
 
     &-group3 h2 {
@@ -598,140 +640,4 @@ footer {
     100% {
         opacity: 1;
     }
-}
-
-/* Animation coeur */
-
-.article-heart2 {
-    margin-left: 122px;
-}
-
-.article-heart3 {
-    margin-left: 156px;
-}
-
-.article-heart4 {
-    margin-left: 119px;
-}
-
-input[type="radio"] {
-    opacity: 0;
-    position: fixed;
-    width: 0;
-}
-
-.article-heart label {
-    font-size: 1.2em;
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    right: 23px;
-    opacity: 0;
-    transition: transform 100ms ease-out;
-    transform: scale(0.55);
-}
-
-.article-heart input[type="radio"]:checked {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
-}
-
-.article-heart input[type="radio"]:focus+label {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
-}
-
-.article-heart label:hover {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
-}
-
-.article-heart2 label {
-    font-size: 1.2em;
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    right: 23px;
-    opacity: 0;
-    transition: transform 100ms ease-out;
-    transform: scale(0.55);
-}
-
-.article-heart2 input[type="radio"]:checked {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
-}
-
-.article-heart2 input[type="radio"]:focus+label {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
-}
-
-.article-heart2 label:hover {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
-}
-
-.article-heart3 label {
-    font-size: 1.2em;
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    right: 23px;
-    opacity: 0;
-    transition: transform 100ms ease-out;
-    transform: scale(0.55);
-}
-
-.article-heart3 input[type="radio"]:checked {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
-}
-
-.article-heart3 input[type="radio"]:focus+label {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
-}
-
-.article-heart3 label:hover {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
-}
-
-.article-heart4 label {
-    font-size: 1.2em;
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    right: 23px;
-    opacity: 0;
-    transition: transform 100ms ease-out;
-    transform: scale(0.55);
-}
-
-.article-heart4 input[type="radio"]:checked {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
-}
-
-.article-heart4 input[type="radio"]:focus+label {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
-}
-
-.article-heart4 label:hover {
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
 }
