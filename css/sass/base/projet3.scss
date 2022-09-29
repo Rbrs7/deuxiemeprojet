@@ -74,8 +74,8 @@ body {
         cursor: pointer;
     }
 
-    &-btn:hover{
-        background: linear-gradient(lighten($secondary, 5%),$primary);
+    &-btn:hover {
+        background: linear-gradient(lighten($secondary, 5%), $primary);
         box-shadow: 1px 5px 12px -1px darken($box-shadow-color, 50%);
     }
 
@@ -113,37 +113,26 @@ ul {
     margin-right: 20px;
 }
 
-.anim-heart, .anim-heart-index{
+.anim-heart,
+.anim-heart-index {
     position: relative;
     cursor: pointer;
 }
 
-.icon-heart-regular{
-    font-size: $size-ico+4px;
+.icon-heart-regular {
+    font-size: $size-ico+2px;
 }
 
-.anim-heart-index span{
+.anim-heart-index span {
     font-size: $size-ico;
     position: absolute;
     bottom: 2px;
 }
 
-.anim-heart span{
+.anim-heart span {
     font-size: $size-ico;
     position: absolute;
     bottom: -8px;
-}
-
-.icon-heart-solid{
-    opacity: 0;
-    transition: transform 200ms ease-out;
-    transform: scale(0.55);
-}
-
-.icon-heart-solid:hover{
-    transform: scale(1.2);
-    opacity: 1;
-    color: red;
 }
 
 .nav h1 {
@@ -406,7 +395,7 @@ footer {
         margin-bottom: 15px;
     }
 
-    &-container{
+    &-container {
         position: relative;
         display: flex;
         justify-content: flex-start;
@@ -421,37 +410,37 @@ footer {
         cursor: pointer;
     }
 
-    &-soustitre{
+    &-soustitre {
         margin-left: 20px;
         margin-top: -10px;
     }
 
 
-    &-container h2{
+    &-container h2 {
         margin-left: 18px;
     }
 
-    &-prix{
+    &-prix {
         position: absolute;
         right: 25px;
         bottom: 18px;
         font-family: 'robotobold';
     }
 
-    &-flex{
+    &-flex {
         display: flex;
         justify-content: space-between;
     }
 
-    &-container2{
+    &-container2 {
         @include container-annexe;
     }
 
-    &-container2 h2{
+    &-container2 h2 {
         margin-left: 18px;
     }
 
-    &-btn{
+    &-btn {
         position: relative;
         bottom: 25px;
         left: 55px;
@@ -465,13 +454,13 @@ footer {
         box-shadow: $box-shadow-btn;
     }
 
-    &-btn:hover{
-        background: linear-gradient(lighten($secondary, 5%),$primary);
+    &-btn:hover {
+        background: linear-gradient(lighten($secondary, 5%), $primary);
         box-shadow: 1px 5px 12px -1px darken($box-shadow-color, 50%);
     }
 }
 
-.bg-anim{
+.bg-anim {
     position: absolute;
     right: 0;
     height: 80px;
@@ -485,7 +474,7 @@ footer {
     opacity: 0;
 }
 
-.icon-checkmark-outline{
+.icon-checkmark-outline {
     color: #FFFFFF;
     font-size: 1.7em;
 }
@@ -496,7 +485,7 @@ footer {
 
 /* Animation apparition du menu */
 
-.menu-anim1{
+.menu-anim1 {
     opacity: 0;
     animation-name: apparition;
     animation-duration: 800ms;
@@ -505,7 +494,7 @@ footer {
     transition: transform 100ms ease-in-out 50ms;
 }
 
-.menu-anim2{
+.menu-anim2 {
     opacity: 0;
     animation-name: apparition;
     animation-duration: 800ms;
@@ -515,7 +504,7 @@ footer {
     transition: transform 100ms ease-in-out 50ms;
 }
 
-.menu-anim3{
+.menu-anim3 {
     opacity: 0;
     animation-name: apparition;
     animation-duration: 800ms;
@@ -526,41 +515,41 @@ footer {
 }
 
 @keyframes apparition {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(-20px);
     }
 
-    15%{
+    15% {
         opacity: .1;
         transform: translateY(-16px);
     }
 
-    25%{
+    25% {
         opacity: .2;
         transform: translateY(-11px);
     }
 
-    45%{
+    45% {
         opacity: .4;
         transform: translateY(-2px);
     }
 
-    85%{
+    85% {
         opacity: .8;
         transform: translateY(0px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
-    
+
 }
 
 /* Animation loading spinner */
 
-.loader{
+.loader {
     /* Création du loader */
     opacity: 1;
     border: 10px solid #FFFFFF;
@@ -568,7 +557,7 @@ footer {
     border-bottom: 10px solid $secondary;
     border-right: 10px solid #FFFFFF;
     border-radius: 50%;
-    width : 100px;
+    width: 100px;
     height: 100px;
     animation: spin 1.5s linear infinite;
     animation-fill-mode: forwards;
@@ -580,20 +569,20 @@ footer {
     right: 0;
     bottom: 0;
 }
- 
-@keyframes spin{
 
-    0%{
+@keyframes spin {
+
+    0% {
         transform: rotate(0deg);
     }
 
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 
 }
 
-.bloc-page{
+.bloc-page {
     opacity: 0;
     animation: load_page 1s;
     animation-delay: 1.5s;
@@ -601,12 +590,148 @@ footer {
     background-color: white;
 }
 
-@keyframes load_page{
-    0%{
+@keyframes load_page {
+    0% {
         opacity: 0;
     }
 
-    100%{
+    100% {
         opacity: 1;
     }
+}
+
+/* Animation coeur */
+
+.article-heart2 {
+    margin-left: 122px;
+}
+
+.article-heart3 {
+    margin-left: 156px;
+}
+
+.article-heart4 {
+    margin-left: 119px;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.article-heart label {
+    font-size: 1.2em;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 23px;
+    opacity: 0;
+    transition: transform 100ms ease-out;
+    transform: scale(0.55);
+}
+
+.article-heart input[type="radio"]:checked {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+.article-heart input[type="radio"]:focus+label {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+.article-heart label:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+.article-heart2 label {
+    font-size: 1.2em;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 23px;
+    opacity: 0;
+    transition: transform 100ms ease-out;
+    transform: scale(0.55);
+}
+
+.article-heart2 input[type="radio"]:checked {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+.article-heart2 input[type="radio"]:focus+label {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+.article-heart2 label:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+.article-heart3 label {
+    font-size: 1.2em;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 23px;
+    opacity: 0;
+    transition: transform 100ms ease-out;
+    transform: scale(0.55);
+}
+
+.article-heart3 input[type="radio"]:checked {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+.article-heart3 input[type="radio"]:focus+label {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+.article-heart3 label:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+.article-heart4 label {
+    font-size: 1.2em;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 23px;
+    opacity: 0;
+    transition: transform 100ms ease-out;
+    transform: scale(0.55);
+}
+
+.article-heart4 input[type="radio"]:checked {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+.article-heart4 input[type="radio"]:focus+label {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+.article-heart4 label:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
 }
