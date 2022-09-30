@@ -450,6 +450,23 @@ footer {
         margin-right: 10px;
         box-shadow: $box-shadow-btn;
         cursor: pointer;
+
+        &:active > .bg-anim {
+            opacity: 1;
+            width: 80px;
+        }
+
+        &:active > .menu-text p:nth-child(2) {
+            transform: translate(-70px);
+        }
+
+        &:active > .menu-text h2, p:nth-child(1) {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 200px;
+        }
+
     }
 
     &-soustitre {
@@ -463,6 +480,7 @@ footer {
     }
 
     &-prix {
+        transition: transform 300ms ease-in-out;
         position: absolute;
         right: 25px;
         bottom: 18px;
@@ -476,6 +494,23 @@ footer {
 
     &-container2 {
         @include container-annexe;
+
+        &:active > .bg-anim {
+            opacity: 1;
+            width: 80px;
+        }
+
+        &:active > .menu-text p:nth-child(2) {
+            transform: translate(-70px);
+        }
+
+        &:active > .menu-text h2, p:nth-child(1) {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 200px;
+        }
+
     }
 
     &-container2 h2 {
@@ -502,28 +537,27 @@ footer {
     }
 }
 
+/* Animation checkmark plats réstaurants */
+
 .bg-anim {
+    opacity: 0;
+    transition: all 330ms ease-in-out;
     position: absolute;
     right: 0;
     height: 80px;
-    width: 70px;
+    width: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $tertiary;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    opacity: 0;
 }
 
 .icon-checkmark-outline {
     color: #FFFFFF;
     font-size: 1.7em;
 }
-
-/* Animation checkmark plats réstaurants */
-
-
 
 /* Animation apparition du menu */
 
