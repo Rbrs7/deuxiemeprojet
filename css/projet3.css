@@ -585,14 +585,17 @@ footer li {
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   cursor: pointer;
 }
-.menu-container:active > .bg-anim {
+.menu-container:hover .icon-checkmark-outline {
+  transform: rotate(360deg);
+}
+.menu-container:hover > .bg-anim {
   opacity: 1;
   width: 80px;
 }
-.menu-container:active > .menu-text p:nth-child(2) {
+.menu-container:hover > .menu-text p:nth-child(2) {
   transform: translate(-70px);
 }
-.menu-container:active > .menu-text h2, .menu-container p:nth-child(1) {
+.menu-container:hover > .menu-text h2, .menu-container p:nth-child(1) {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -630,14 +633,18 @@ footer li {
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   cursor: pointer;
 }
-.menu-container2:active > .bg-anim {
+.menu-container2:hover .icon-checkmark-outline {
+  transform: rotate(360deg);
+  transition: 0.6s;
+}
+.menu-container2:hover > .bg-anim {
   opacity: 1;
   width: 80px;
 }
-.menu-container2:active > .menu-text p:nth-child(2) {
+.menu-container2:hover > .menu-text p:nth-child(2) {
   transform: translate(-70px);
 }
-.menu-container2:active > .menu-text h2, .menu-container2 p:nth-child(1) {
+.menu-container2:hover > .menu-text h2, .menu-container2 p:nth-child(1) {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -691,6 +698,8 @@ footer li {
 }
 
 .icon-checkmark-outline {
+  transition: transform 0.6s;
+  display: inline-block;
   color: #FFFFFF;
   font-size: 1.7em;
 }
