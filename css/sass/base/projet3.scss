@@ -288,19 +288,34 @@ input[type="radio"] {
         margin-left: 120px;
     }
 
-    &-heart label, &-heart2 label, &-heart3 label, &-heart4 label {
+    &-heart label,
+    &-heart2 label,
+    &-heart3 label,
+    &-heart4 label {
         @include label;
     }
-    
-    &-heart input[type="radio"]:checked, &-heart2 input[type="radio"]:checked, &-heart3 input[type="radio"]:checked, &-heart4 input[type="radio"]:checked, &-heart5 input[type="radio"]:checked {
+
+    &-heart input[type="radio"]:checked,
+    &-heart2 input[type="radio"]:checked,
+    &-heart3 input[type="radio"]:checked,
+    &-heart4 input[type="radio"]:checked,
+    &-heart5 input[type="radio"]:checked {
         @include inputradio;
     }
-    
-    &-heart input[type="radio"]:focus+label, &-heart2 input[type="radio"]:focus+label, &-heart3 input[type="radio"]:focus+label, &-heart4 input[type="radio"]:focus+label, &-heart5 input[type="radio"]:focus+label {
+
+    &-heart input[type="radio"]:focus+label,
+    &-heart2 input[type="radio"]:focus+label,
+    &-heart3 input[type="radio"]:focus+label,
+    &-heart4 input[type="radio"]:focus+label,
+    &-heart5 input[type="radio"]:focus+label {
         @include inputradio;
     }
-    
-    &-heart label:hover, &-heart2 label:hover, &-heart3 label:hover, &-heart4 label:hover, &-heart5 label:hover {
+
+    &-heart label:hover,
+    &-heart2 label:hover,
+    &-heart3 label:hover,
+    &-heart4 label:hover,
+    &-heart5 label:hover {
         @include inputradio;
     }
 
@@ -311,11 +326,11 @@ input[type="radio"] {
     &-heart3 {
         margin-left: 157px;
     }
-    
+
     &-heart4 {
         margin-left: 119px;
     }
-    
+
     &-heart5 label {
         font-size: 1.4em;
         display: inline-block;
@@ -451,20 +466,21 @@ footer {
         box-shadow: $box-shadow-btn;
         cursor: pointer;
 
-        &:hover .icon-checkmark-outline {
+        &:hover .bg-anim label {
             transform: rotate(360deg);
         }
 
-        &:hover > .bg-anim {
+        &:hover>.bg-anim {
             opacity: 1;
             width: 80px;
         }
 
-        &:hover > .menu-text p:nth-child(2) {
+        &:hover>.menu-text p:nth-child(2) {
             transform: translate(-70px);
         }
 
-        &:hover > .menu-text h2, p:nth-child(1) {
+        &:hover>.menu-text h2,
+        p:nth-child(1) {
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
@@ -500,21 +516,22 @@ footer {
         @include container-annexe;
 
 
-        &:hover .icon-checkmark-outline {
+        &:hover .bg-anim label {
             transform: rotate(360deg);
             transition: 0.6s;
         }
 
-        &:hover > .bg-anim {
+        &:hover>.bg-anim {
             opacity: 1;
             width: 80px;
         }
 
-        &:hover > .menu-text p:nth-child(2) {
+        &:hover>.menu-text p:nth-child(2) {
             transform: translate(-70px);
         }
 
-        &:hover > .menu-text h2, p:nth-child(1) {
+        &:hover>.menu-text h2,
+        p:nth-child(1) {
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
@@ -562,14 +579,24 @@ footer {
     background-color: $tertiary;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+
+    & label {
+        transition: transform 0.6s;
+        display: inline-block;
+        color: #FFFFFF;
+        font-size: 1.7em;
+        cursor: pointer;
+    }
+
+    & input[type="radio"]:checked {
+        color: green;
+    }
+
+    & input[type="radio"]:focus+label {
+        color: green;
+    }
 }
 
-.icon-checkmark-outline {
-    transition: transform 0.6s;
-    display: inline-block;
-    color: #FFFFFF;
-    font-size: 1.7em;
-}
 
 /* Animation apparition du menu */
 
