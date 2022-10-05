@@ -21,6 +21,33 @@
     cursor: pointer;
 }
 
+@mixin btn-tablet {
+    margin-left: 22%;
+    padding: 14px;
+    width: 55%;
+    font-family: 'robotoregular';
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background: linear-gradient($secondary, $primary);
+    border-radius: 35px;
+    border: 0px solid #FFFFFF;
+    box-shadow: 0px 5px 11px -2px rgba(127, 127, 127, 0.71);
+    cursor: pointer;
+}
+
+@mixin btn-computer {
+    margin-left: 35%;
+    padding: 14px;
+    width: 30%;
+    font-family: 'robotoregular';
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background: linear-gradient($secondary, $primary);
+    border-radius: 35px;
+    border: 0px solid #FFFFFF;
+    box-shadow: 0px 5px 11px -2px rgba(127, 127, 127, 0.71);
+    cursor: pointer;
+}
 
 @mixin box {
     display: flex;
@@ -40,9 +67,35 @@
     margin-bottom: 20px;
 }
 
+@mixin background-box-tablet {
+    padding: 5px;
+    padding-right: 50px;
+    background-color: white;
+    box-shadow: $box-shadow-btn;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    margin-right: 5%;
+}
+
 @mixin icon-number {
     position: relative;
-    top: 44px;
+    top: 60px;
+    right: 20px;
+    font-size: 30px;
+    color: $primary;
+}
+
+@mixin icon-number-tablet {
+    position: relative;
+    top: 65px;
+    right: 20px;
+    font-size: 30px;
+    color: $primary;
+}
+
+@mixin icon-number-desk {
+    position: relative;
+    top: 115px;
     right: 20px;
     font-size: 30px;
     color: $primary;

@@ -72,6 +72,15 @@ body {
         border: 0px solid #FFFFFF;
         box-shadow: 0px 5px 11px -2px rgba(127, 127, 127, 0.71);
         cursor: pointer;
+
+        @media (min-width:768px) and (max-width:992px) {
+            @include btn-tablet;
+        }
+
+        @media (min-width:992px) {
+            @include btn-computer;
+        }
+
     }
 
     &-btn:hover {
@@ -95,14 +104,39 @@ ul {
 
 .icon-number {
     @include icon-number;
+
+    @media (min-width:768px) and (max-width:992px) {
+        @include icon-number-tablet;
+    }
+
+    @media (min-width:992px) {
+        @include icon-number-desk;
+    }
+
 }
 
 .icon-number1 {
     @include icon-number;
+
+    @media (min-width:768px) and (max-width:992px) {
+        @include icon-number-tablet;
+    }
+
+    @media (min-width:992px) {
+        @include icon-number-desk;
+    }
 }
 
 .icon-number2 {
     @include icon-number;
+
+    @media (min-width:768px) and (max-width:992px) {
+        @include icon-number-tablet;
+    }
+
+    @media (min-width:992px) {
+        @include icon-number-desk;
+    }
 }
 
 .icon-tablet,
@@ -111,6 +145,7 @@ ul {
     font-size: $size-ico+2px;
     color: rgba(73, 72, 72, 0.8);
     margin-right: 20px;
+    margin-top: 18px;
 }
 
 .anim-heart,
@@ -158,6 +193,21 @@ ul {
         border: 0px solid #FFFFFF;
         box-shadow: $box-shadow-btn;
         margin-bottom: 2%;
+
+        & a {
+            display: flex;
+        
+        @media (min-width:768px) and (max-width:992px) {
+            justify-content: center;
+            margin-left: 15%;
+        }  
+        
+        @media (min-width:992px) {
+            justify-content: center;
+            margin-left: 15%;
+        }
+
+        }
     }
 
     &-container2 {
@@ -170,6 +220,23 @@ ul {
         border: 0px solid #FFFFFF;
         box-shadow: $box-shadow-btn;
         margin-bottom: 2%;
+
+        & a {
+            display: flex;
+        
+        @media (min-width:768px) and (max-width:992px) {
+            justify-content: center;
+            margin-left: 20%;
+        }  
+
+        @media (min-width:992px) {
+            justify-content: center;
+            margin-left: 21.5%;
+        }
+
+
+        }
+
     }
 
     &-container3 {
@@ -182,6 +249,22 @@ ul {
         border: 0px solid #FFFFFF;
         box-shadow: $box-shadow-btn;
         margin-bottom: 20%;
+
+        & a {
+            display: flex;
+        
+        @media (min-width:768px) and (max-width:992px) {
+            justify-content: center;
+            margin-left: 20%;
+        }  
+
+        @media (min-width:992px) {
+            justify-content: center;
+            margin-left: 21%;
+        }
+
+        }
+
     }
 
     &-group {
@@ -205,11 +288,22 @@ article {
 
 }
 
-input[type="radio"] {
-    z-index: -1;
-    opacity: 0;
-    position: fixed;
-    width: 0;
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width:768px) and (max-width:992px) {
+        align-items: center;
+        margin: auto;
+    }
+
+    & h1{
+        font-size: 2em;
+    }
 }
 
 .article {
@@ -217,6 +311,11 @@ input[type="radio"] {
 
     &-background1 {
         @include background-box;
+
+        @media (min-width:768px) and (max-width:992px) {
+            @include background-box-tablet;
+            margin-left: 10%;
+        }  
     }
 
     &-image1 {
@@ -243,6 +342,11 @@ input[type="radio"] {
 
     &-background2 {
         @include background-box;
+
+        @media (min-width:768px) and (max-width:992px) {
+            @include background-box-tablet;
+            margin-left: 10%;
+        }  
     }
 
     &-image2 {
@@ -269,6 +373,11 @@ input[type="radio"] {
 
     &-background3 {
         @include background-box;
+
+        @media (min-width:768px) and (max-width:992px) {
+            @include background-box-tablet;
+            margin-left: 10%;
+        }  
     }
 
     &-image3 {
@@ -295,30 +404,16 @@ input[type="radio"] {
         @include label;
     }
 
-    &-heart input[type="radio"]:checked,
-    &-heart2 input[type="radio"]:checked,
-    &-heart3 input[type="radio"]:checked,
-    &-heart4 input[type="radio"]:checked,
-    &-heart5 input[type="radio"]:checked {
+    &-heart input[type="checkbox"]:checked + label,
+    &-heart2 input[type="checkbox"]:checked + label,
+    &-heart3 input[type="checkbox"]:checked + label,
+    &-heart4 input[type="checkbox"]:checked + label,
+    &-heart5 input[type="checkbox"]:checked + label {
         @include inputradio;
     }
+   
 
-    &-heart input[type="radio"]:focus+label,
-    &-heart2 input[type="radio"]:focus+label,
-    &-heart3 input[type="radio"]:focus+label,
-    &-heart4 input[type="radio"]:focus+label,
-    &-heart5 input[type="radio"]:focus+label {
-        @include inputradio;
-    }
-
-    &-heart label:hover,
-    &-heart2 label:hover,
-    &-heart3 label:hover,
-    &-heart4 label:hover,
-    &-heart5 label:hover {
-        @include inputradio;
-    }
-
+    
     &-heart2 {
         margin-left: 120px;
     }
@@ -353,6 +448,11 @@ input[type="radio"] {
 
     &-background4 {
         @include background-box;
+
+        @media (min-width:768px) and (max-width:992px) {
+            @include background-box-tablet;
+            margin-left: 10%;
+        }  
     }
 
     &-image4 {
@@ -394,15 +494,35 @@ footer {
 
     & img {
         filter: invert(1);
+
+        @media (min-width:768px) and (max-width:992px) {
+            height: 30px;
+            width: 120px;
+            margin-right: 20px;
+        }  
     }
 
     & li {
         padding-top: 5px;
+
+        @media (min-width:768px) and (max-width:992px) {
+            margin-right: 25px;
+        }  
     }
+
+    @media (min-width:768px) and (max-width:992px) {
+       display: flex; 
+       justify-content: center;
+    }  
 }
 
 .foot-logo {
-    margin-left: 38px;
+    margin-left: 38px; 
+
+    @media (min-width:768px) and (max-width:992px) {
+        display: flex;
+        align-items: center;
+    }  
 }
 
 .icon-location-food {
@@ -436,6 +556,25 @@ footer {
     border-radius: 40px;
 }
 
+input[type="radio"]:checked + .menu-container {
+
+    >.bg-anim {
+        opacity: 1;
+        width: 80px;
+    }
+
+    >.menu-text p:nth-child(2) {
+        transform: translate(-70px);
+    }
+
+    >.menu-text h2,
+    p:nth-child(1) {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 200px;
+    }
+}
 
 .menu {
     margin-left: 10px;
@@ -466,7 +605,7 @@ footer {
         box-shadow: $box-shadow-btn;
         cursor: pointer;
 
-        &:hover .bg-anim label {
+        &:hover .icon-checkmark-outline {
             transform: rotate(360deg);
         }
 
@@ -516,7 +655,7 @@ footer {
         @include container-annexe;
 
 
-        &:hover .bg-anim label {
+        &:hover .icon-checkmark-outline {
             transform: rotate(360deg);
             transition: 0.6s;
         }
@@ -579,24 +718,15 @@ footer {
     background-color: $tertiary;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-
-    & label {
-        transition: transform 0.6s;
-        display: inline-block;
-        color: #FFFFFF;
-        font-size: 1.7em;
-        cursor: pointer;
-    }
-
-    & input[type="radio"]:checked {
-        color: green;
-    }
-
-    & input[type="radio"]:focus+label {
-        color: green;
-    }
 }
 
+.icon-checkmark-outline {
+    transition: transform 0.6s;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 1.7em;
+    cursor: pointer;
+}
 
 /* Animation apparition du menu */
 
