@@ -41,6 +41,10 @@ body {
     padding-bottom: 1%;
     margin-bottom: 30px;
 
+    @media (min-width:992px) {
+        padding-top: 2%;
+    }
+
     &-title {
         font-family: 'robotoregular';
         font-size: 0.7em;
@@ -250,6 +254,10 @@ ul {
         box-shadow: $box-shadow-btn;
         margin-bottom: 20%;
 
+        @media (min-width:992px) {
+            margin-bottom: 10%;  
+        }
+
         & a {
             display: flex;
 
@@ -274,6 +282,8 @@ ul {
 }
 
 article {
+    display: flex;
+    flex-direction: column;
     @include background-light;
     margin: -5px;
     padding-top: 7%;
@@ -281,13 +291,20 @@ article {
     margin-top: -20px;
     padding-bottom: 1%;
 
-    & h1 {
-        margin: 5%;
-        margin-bottom: -1%;
+    @media (min-width:768px) and (max-width:992px) {
+        align-items: center;
+        margin: auto;
     }
 
-    & span{
-        display: block;
+    & h1 {
+        font-size: 2em;
+        margin: 5%;
+
+        @media (min-width:992px) {
+            display: flex;
+            justify-content: center;
+            margin-top: -50px;
+        }
     }
 
 }
@@ -297,22 +314,12 @@ input[type="radio"] {
     display: none;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width:768px) and (max-width:992px) {
-        align-items: center;
-        margin: auto;
-    }
-
-    & h1 {
-        font-size: 2em;
-    }
-}
-
 .article {
-    padding: 7%;
+    @media (min-width:992px) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 
     &-background1 {
         @include background-box;
@@ -320,6 +327,10 @@ article {
         @media (min-width:768px) and (max-width:992px) {
             @include background-box-tablet;
             margin-left: 10%;
+        }
+
+        @media (min-width:992px) {
+            @include background-box-desk;
         }
     }
 
@@ -352,6 +363,10 @@ article {
             @include background-box-tablet;
             margin-left: 10%;
         }
+
+        @media (min-width:992px) {
+            @include background-box-desk;
+        }
     }
 
     &-image2 {
@@ -383,6 +398,10 @@ article {
             @include background-box-tablet;
             margin-left: 10%;
         }
+
+        @media (min-width:992px) {
+            @include background-box-desk;
+        }
     }
 
     &-image3 {
@@ -399,7 +418,12 @@ article {
     }
 
     &-heart {
-        margin-left: 120px;
+        margin-left: 149px;
+
+        @media (min-width:768px) and (max-width:992px) {
+            position: absolute;
+            right: 0;
+        }
     }
 
     &-heart label,
@@ -420,15 +444,30 @@ article {
 
 
     &-heart2 {
-        margin-left: 120px;
+        margin-left: 149px;
+
+        @media (min-width:768px) and (max-width:992px) {
+            position: absolute;
+            right: 0;
+        }
     }
 
     &-heart3 {
-        margin-left: 157px;
+        margin-left: 186px;
+
+        @media (min-width:768px) and (max-width:992px) {
+            position: absolute;
+            right: 0;
+        }
     }
 
     &-heart4 {
-        margin-left: 119px;
+        margin-left: 149px;
+
+        @media (min-width:768px) and (max-width:992px) {
+            position: absolute;
+            right: 0;
+        }
     }
 
     &-heart5 label {
@@ -457,6 +496,11 @@ article {
         @media (min-width:768px) and (max-width:992px) {
             @include background-box-tablet;
             margin-left: 10%;
+            margin-bottom: 12%;
+        }
+
+        @media (min-width:992px) {
+            @include background-box-desk;
         }
     }
 
@@ -505,6 +549,12 @@ footer {
             width: 120px;
             margin-right: 20px;
         }
+
+        @media (min-width:992px) {
+            height: 30px;
+            width: 120px;
+            margin-right: 20px;
+        }
     }
 
     & li {
@@ -513,9 +563,18 @@ footer {
         @media (min-width:768px) and (max-width:992px) {
             margin-right: 25px;
         }
+
+        @media (min-width:992px) {
+            margin-right: 25px;
+        }
     }
 
     @media (min-width:768px) and (max-width:992px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (min-width:992px) {
         display: flex;
         justify-content: center;
     }
@@ -525,6 +584,11 @@ footer {
     margin-left: 38px;
 
     @media (min-width:768px) and (max-width:992px) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media (min-width:992px) {
         display: flex;
         align-items: center;
     }
@@ -561,7 +625,7 @@ footer {
     border-radius: 40px;
 }
 
-input[type="radio"]:checked + .menu-container {
+input[type="radio"]:checked+.menu-container {
 
     .icon-checkmark-outline {
         transform: rotate(360deg);
@@ -585,8 +649,8 @@ input[type="radio"]:checked + .menu-container {
     }
 }
 
-input[type="radio"]:checked + .menu-container2 {
-    
+input[type="radio"]:checked+.menu-container2 {
+
     .icon-checkmark-outline {
         transform: rotate(360deg);
     }
@@ -719,7 +783,7 @@ input[type="radio"]:checked + .menu-container2 {
     &-btn {
         position: relative;
         bottom: 25px;
-        left: 55px;
+        left: 5px;
         margin-bottom: 50px;
         display: flex;
         justify-content: center;
@@ -728,6 +792,11 @@ input[type="radio"]:checked + .menu-container2 {
         padding: 12px;
         font-size: 1.1em;
         box-shadow: $box-shadow-btn;
+
+        @media (min-width:992px) {
+            width: 20%;
+            margin-left: 38%;
+        }
     }
 
     &-btn:hover {
@@ -753,12 +822,12 @@ input[type="radio"]:checked + .menu-container2 {
     border-bottom-right-radius: 20px;
 }
 
-.icon-checkmark-outline{
-transition: transform 0.6s;
-display: inline-block;
-color: #FFFFFF;
-font-size: 1.7em;
-cursor: pointer;
+.icon-checkmark-outline {
+    transition: transform 0.6s;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 1.7em;
+    cursor: pointer;
 }
 
 

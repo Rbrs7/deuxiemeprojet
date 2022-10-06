@@ -153,6 +153,11 @@ body {
   padding-bottom: 1%;
   margin-bottom: 30px;
 }
+@media (min-width: 992px) {
+  .head {
+    padding-top: 2%;
+  }
+}
 .head-title {
   font-family: "robotoregular";
   font-size: 0.7em;
@@ -201,6 +206,7 @@ body {
 @media (min-width: 992px) {
   .head-btn {
     margin-left: 35%;
+    margin-bottom: -10%;
     padding: 14px;
     width: 30%;
     font-family: "robotoregular";
@@ -249,7 +255,7 @@ ul {
 @media (min-width: 992px) {
   .icon-number {
     position: relative;
-    top: 115px;
+    top: 130px;
     right: 20px;
     font-size: 30px;
     color: #9356DC;
@@ -275,7 +281,7 @@ ul {
 @media (min-width: 992px) {
   .icon-number1 {
     position: relative;
-    top: 115px;
+    top: 130px;
     right: 20px;
     font-size: 30px;
     color: #9356DC;
@@ -301,7 +307,7 @@ ul {
 @media (min-width: 992px) {
   .icon-number2 {
     position: relative;
-    top: 115px;
+    top: 130px;
     right: 20px;
     font-size: 30px;
     color: #9356DC;
@@ -414,6 +420,11 @@ ul {
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   margin-bottom: 20%;
 }
+@media (min-width: 992px) {
+  .nav-container3 {
+    margin-bottom: 10%;
+  }
+}
 .nav-container3 a {
   display: flex;
 }
@@ -435,29 +446,14 @@ ul {
 }
 
 article {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(241, 241, 241, 0.8);
   margin: -5px;
   padding-top: 7%;
   margin-bottom: 8%;
   margin-top: -20px;
   padding-bottom: 1%;
-}
-article h1 {
-  margin: 5%;
-  margin-bottom: -1%;
-}
-article span {
-  display: block;
-}
-
-input[type=checkbox],
-input[type=radio] {
-  display: none;
-}
-
-article {
-  display: flex;
-  flex-direction: column;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   article {
@@ -467,12 +463,31 @@ article {
 }
 article h1 {
   font-size: 2em;
+  margin: 5%;
+}
+@media (min-width: 992px) {
+  article h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+  }
 }
 
-.article {
-  padding: 7%;
+input[type=checkbox],
+input[type=radio] {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .article {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 }
 .article-background1 {
+  position: relative;
+  padding: 1px;
   background-color: white;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   border-radius: 20px;
@@ -482,8 +497,8 @@ article h1 {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background1 {
-    padding: 5px;
-    padding-right: 50px;
+    padding: 2px;
+    padding-right: 64px;
     background-color: white;
     box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
     border-radius: 20px;
@@ -492,12 +507,21 @@ article h1 {
     margin-left: 10%;
   }
 }
+@media (min-width: 992px) {
+  .article-background1 {
+    background-color: white;
+    box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+}
 .article-image1 {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 .article-group1 {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -517,6 +541,8 @@ article h1 {
   margin-top: -10px;
 }
 .article-background2 {
+  position: relative;
+  padding: 1px;
   background-color: white;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   border-radius: 20px;
@@ -526,8 +552,8 @@ article h1 {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background2 {
-    padding: 5px;
-    padding-right: 50px;
+    padding: 2px;
+    padding-right: 64px;
     background-color: white;
     box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
     border-radius: 20px;
@@ -536,12 +562,21 @@ article h1 {
     margin-left: 10%;
   }
 }
+@media (min-width: 992px) {
+  .article-background2 {
+    background-color: white;
+    box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+}
 .article-image2 {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 .article-group2 {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -561,6 +596,8 @@ article h1 {
   margin-top: -10px;
 }
 .article-background3 {
+  position: relative;
+  padding: 1px;
   background-color: white;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   border-radius: 20px;
@@ -570,8 +607,8 @@ article h1 {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background3 {
-    padding: 5px;
-    padding-right: 50px;
+    padding: 2px;
+    padding-right: 64px;
     background-color: white;
     box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
     border-radius: 20px;
@@ -580,12 +617,21 @@ article h1 {
     margin-left: 10%;
   }
 }
+@media (min-width: 992px) {
+  .article-background3 {
+    background-color: white;
+    box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+}
 .article-image3 {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 .article-group3 {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -598,7 +644,13 @@ article h1 {
   align-items: flex-end;
 }
 .article-heart {
-  margin-left: 120px;
+  margin-left: 149px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .article-heart {
+    position: absolute;
+    right: 0;
+  }
 }
 .article-heart label, .article-heart2 label, .article-heart3 label, .article-heart4 label {
   font-size: 1.2em;
@@ -616,13 +668,31 @@ article h1 {
   color: red;
 }
 .article-heart2 {
-  margin-left: 120px;
+  margin-left: 149px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .article-heart2 {
+    position: absolute;
+    right: 0;
+  }
 }
 .article-heart3 {
-  margin-left: 157px;
+  margin-left: 186px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .article-heart3 {
+    position: absolute;
+    right: 0;
+  }
 }
 .article-heart4 {
-  margin-left: 119px;
+  margin-left: 149px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .article-heart4 {
+    position: absolute;
+    right: 0;
+  }
 }
 .article-heart5 label {
   font-size: 1.4em;
@@ -642,6 +712,8 @@ article h1 {
   margin-top: -10px;
 }
 .article-background4 {
+  position: relative;
+  padding: 1px;
   background-color: white;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   border-radius: 20px;
@@ -651,14 +723,23 @@ article h1 {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background4 {
-    padding: 5px;
-    padding-right: 50px;
+    padding: 2px;
+    padding-right: 64px;
     background-color: white;
     box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
     border-radius: 20px;
     margin-bottom: 25px;
     margin-right: 5%;
     margin-left: 10%;
+    margin-bottom: 12%;
+  }
+}
+@media (min-width: 992px) {
+  .article-background4 {
+    background-color: white;
+    box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+    border-radius: 20px;
+    margin-bottom: 25px;
   }
 }
 .article-image4 {
@@ -667,6 +748,7 @@ article h1 {
   border-top-right-radius: 20px;
 }
 .article-group4 {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -709,10 +791,22 @@ footer img {
     margin-right: 20px;
   }
 }
+@media (min-width: 992px) {
+  footer img {
+    height: 30px;
+    width: 120px;
+    margin-right: 20px;
+  }
+}
 footer li {
   padding-top: 5px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  footer li {
+    margin-right: 25px;
+  }
+}
+@media (min-width: 992px) {
   footer li {
     margin-right: 25px;
   }
@@ -723,11 +817,23 @@ footer li {
     justify-content: center;
   }
 }
+@media (min-width: 992px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .foot-logo {
   margin-left: 38px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  .foot-logo {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
   .foot-logo {
     display: flex;
     align-items: center;
@@ -901,11 +1007,11 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
 .menu-btn {
   position: relative;
   bottom: 25px;
-  left: 55px;
+  left: 5px;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  margin-left: 8%;
+  margin-left: 24%;
   padding: 14px;
   width: 85%;
   font-family: "robotoregular";
@@ -920,6 +1026,12 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   padding: 12px;
   font-size: 1.1em;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+}
+@media (min-width: 992px) {
+  .menu-btn {
+    width: 20%;
+    margin-left: 38%;
+  }
 }
 .menu-btn:hover {
   background: linear-gradient(#ff93e1, #9356DC);

@@ -8,7 +8,7 @@
 }
 
 @mixin btn-1 {
-    margin-left: 8%;
+    margin-left: 24%;
     padding: 14px;
     width: 85%;
     font-family: 'robotoregular';
@@ -37,6 +37,7 @@
 
 @mixin btn-computer {
     margin-left: 35%;
+    margin-bottom: -10%;
     padding: 14px;
     width: 30%;
     font-family: 'robotoregular';
@@ -50,6 +51,7 @@
 }
 
 @mixin box {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -59,6 +61,8 @@
 }
 
 @mixin background-box {
+    position: relative;
+    padding: 1px;
     background-color: white;
     box-shadow: $box-shadow-btn;
     border-radius: 20px;
@@ -68,13 +72,20 @@
 }
 
 @mixin background-box-tablet {
-    padding: 5px;
-    padding-right: 50px;
+    padding: 2px;
+    padding-right: 64px;
     background-color: white;
     box-shadow: $box-shadow-btn;
     border-radius: 20px;
     margin-bottom: 25px;
     margin-right: 5%;
+}
+
+@mixin background-box-desk {
+    background-color: white;
+    box-shadow: $box-shadow-btn;
+    border-radius: 20px;
+    margin-bottom: 25px;
 }
 
 @mixin icon-number {
@@ -95,7 +106,7 @@
 
 @mixin icon-number-desk {
     position: relative;
-    top: 115px;
+    top: 130px;
     right: 20px;
     font-size: 30px;
     color: $primary;
