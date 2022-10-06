@@ -446,8 +446,12 @@ article h1 {
   margin: 5%;
   margin-bottom: -1%;
 }
+article span {
+  display: block;
+}
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox],
+input[type=radio] {
   display: none;
 }
 
@@ -760,6 +764,9 @@ footer li {
   border-radius: 40px;
 }
 
+input[type=radio]:checked + .menu-container .icon-checkmark-outline {
+  transform: rotate(360deg);
+}
 input[type=radio]:checked + .menu-container > .bg-anim {
   opacity: 1;
   width: 80px;
@@ -769,6 +776,24 @@ input[type=radio]:checked + .menu-container > .menu-text p:nth-child(2) {
 }
 input[type=radio]:checked + .menu-container > .menu-text h2,
 input[type=radio]:checked + .menu-container p:nth-child(1) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 200px;
+}
+
+input[type=radio]:checked + .menu-container2 .icon-checkmark-outline {
+  transform: rotate(360deg);
+}
+input[type=radio]:checked + .menu-container2 > .bg-anim {
+  opacity: 1;
+  width: 80px;
+}
+input[type=radio]:checked + .menu-container2 > .menu-text p:nth-child(2) {
+  transform: translate(-70px);
+}
+input[type=radio]:checked + .menu-container2 > .menu-text h2,
+input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
