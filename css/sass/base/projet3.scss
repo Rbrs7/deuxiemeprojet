@@ -12,6 +12,37 @@ body {
     @include header-logo;
 }
 
+header {
+    @media (min-width:992px) {
+        background-color: #f1f1f1;
+        width: auto;
+        margin-left: -5px;
+        padding-right: 10px;
+        margin-right: -7px;
+        margin-bottom: -5px;
+    }
+
+    @media (min-width:768px) and (max-width:992px) {
+        background-color: #f1f1f1;
+        width: auto;
+        margin-left: -10px;
+        padding-right: 10px;
+        margin-right: -7px;
+        margin-bottom: -5px;
+    }
+}
+
+
+header img {
+    @media (min-width:992px) {
+        border-radius: 20px;
+    }
+
+    @media (min-width:768px) and (max-width:992px) {
+        border-radius: 20px;
+    }
+}
+
 .head-loc {
     font-family: 'robotoregular';
     font-size: 0.9em;
@@ -183,6 +214,10 @@ ul {
     display: flex;
     flex-direction: column;
 
+    @media (min-width:768px) and (max-width:992px) {
+        margin-left: 1%;
+    }
+
     & h1 {
         margin-bottom: -5px;
     }
@@ -255,7 +290,7 @@ ul {
         margin-bottom: 20%;
 
         @media (min-width:992px) {
-            margin-bottom: 10%;  
+            margin-bottom: 10%;
         }
 
         & a {
@@ -281,7 +316,13 @@ ul {
     }
 }
 
-article {
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+
+.article {
+
     display: flex;
     flex-direction: column;
     @include background-light;
@@ -290,6 +331,13 @@ article {
     margin-bottom: 8%;
     margin-top: -20px;
     padding-bottom: 1%;
+
+    @media (min-width:992px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 
     @media (min-width:768px) and (max-width:992px) {
         align-items: center;
@@ -303,22 +351,7 @@ article {
         @media (min-width:992px) {
             display: flex;
             justify-content: center;
-            margin-top: -50px;
         }
-    }
-
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    display: none;
-}
-
-.article {
-    @media (min-width:992px) {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
     }
 
     &-background1 {
@@ -440,8 +473,6 @@ input[type="radio"] {
     &-heart5 input[type="checkbox"]:checked+label {
         @include inputradio;
     }
-
-
 
     &-heart2 {
         margin-left: 149px;
@@ -608,6 +639,14 @@ footer {
     object-fit: cover;
     margin-top: 10px;
     margin-left: -8px;
+
+    @media (min-width:992px) {
+        margin-left: 40%;
+    }
+
+    @media (min-width:768px) and (max-width:992px) {
+        margin-left: 27%;
+    }
 }
 
 .head-container {
@@ -623,6 +662,25 @@ footer {
     margin-left: -15px;
     margin-right: -10px;
     border-radius: 40px;
+
+    @media (min-width:992px) {
+        margin-left: -1%;
+    }
+
+    @media (min-width:768px) and (max-width:992px) {
+        margin-left: -1%;
+    }
+
+    & h1 {
+        @media (min-width: 992px) {
+            margin-left: 1%;
+        }
+
+        @media (min-width:768px) and (max-width:992px) {
+            margin-left: 1%;
+        }
+    }
+
 }
 
 input[type="radio"]:checked+.menu-container {
@@ -637,7 +695,7 @@ input[type="radio"]:checked+.menu-container {
     }
 
     >.menu-text p:nth-child(2) {
-        transform: translate(-70px);
+        transform: translate(-80px);
     }
 
     >.menu-text h2,
@@ -646,6 +704,14 @@ input[type="radio"]:checked+.menu-container {
         overflow: hidden;
         white-space: nowrap;
         width: 200px;
+
+        @media (min-width:768px) and (max-width:992px) {
+            overflow: visible;
+        }
+
+        @media (min-width:992px) {
+            overflow: visible;
+        }
     }
 }
 
@@ -661,7 +727,7 @@ input[type="radio"]:checked+.menu-container2 {
     }
 
     >.menu-text p:nth-child(2) {
-        transform: translate(-70px);
+        transform: translate(-80px);
     }
 
     >.menu-text h2,
@@ -670,6 +736,14 @@ input[type="radio"]:checked+.menu-container2 {
         overflow: hidden;
         white-space: nowrap;
         width: 200px;
+
+        @media (min-width:768px) and (max-width:992px) {
+            overflow: visible;
+        }
+
+        @media (min-width:992px) {
+            overflow: visible;
+        }
     }
 }
 
@@ -681,7 +755,7 @@ input[type="radio"]:checked+.menu-container2 {
         font-family: 'robotoregular';
         font-weight: 100;
         font-size: 1em;
-        margin-left: 0px;
+        margin-left: 1px;
         border-bottom: solid 3px $tertiary;
         width: 40px;
         margin-top: 12%;
@@ -712,7 +786,7 @@ input[type="radio"]:checked+.menu-container2 {
         }
 
         &:hover>.menu-text p:nth-child(2) {
-            transform: translate(-70px);
+            transform: translate(-80px);
         }
 
         &:hover>.menu-text h2,
@@ -721,8 +795,16 @@ input[type="radio"]:checked+.menu-container2 {
             overflow: hidden;
             white-space: nowrap;
             width: 200px;
-        }
 
+
+            @media (min-width:768px) and (max-width:992px) {
+                overflow: visible;
+            }
+
+            @media (min-width:992px) {
+                overflow: visible;
+            }
+        }
     }
 
     &-soustitre {
@@ -738,7 +820,7 @@ input[type="radio"]:checked+.menu-container2 {
     &-prix {
         transition: transform 300ms ease-in-out;
         position: absolute;
-        right: 25px;
+        right: 5px;
         bottom: 18px;
         font-family: 'robotobold';
     }
@@ -751,7 +833,6 @@ input[type="radio"]:checked+.menu-container2 {
     &-container2 {
         @include container-annexe;
 
-
         &:hover .icon-checkmark-outline {
             transform: rotate(360deg);
             transition: 0.6s;
@@ -763,7 +844,7 @@ input[type="radio"]:checked+.menu-container2 {
         }
 
         &:hover>.menu-text p:nth-child(2) {
-            transform: translate(-70px);
+            transform: translate(-80px);
         }
 
         &:hover>.menu-text h2,
@@ -772,6 +853,14 @@ input[type="radio"]:checked+.menu-container2 {
             overflow: hidden;
             white-space: nowrap;
             width: 200px;
+
+            @media (min-width:768px) and (max-width:992px) {
+                overflow: visible;
+            }
+
+            @media (min-width:992px) {
+                overflow: visible;
+            }
         }
 
     }
@@ -840,6 +929,10 @@ input[type="radio"]:checked+.menu-container2 {
     animation-fill-mode: both;
     transform: translateY(-20px);
     transition: transform 100ms ease-in-out 50ms;
+
+    @media (min-width:992px) {
+        margin-left: 10px;
+    }
 }
 
 .menu-anim2 {
@@ -850,6 +943,10 @@ input[type="radio"]:checked+.menu-container2 {
     animation-fill-mode: both;
     transform: translateY(-20px);
     transition: transform 100ms ease-in-out 50ms;
+
+    @media (min-width:992px) {
+        margin-left: 10px;
+    }
 }
 
 .menu-anim3 {
@@ -860,6 +957,10 @@ input[type="radio"]:checked+.menu-container2 {
     animation-fill-mode: both;
     transform: translateY(-20px);
     transition: transform 100ms ease-in-out 50ms;
+
+    @media (min-width:992px) {
+        margin-left: 10px;
+    }
 }
 
 @keyframes apparition {

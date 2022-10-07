@@ -125,6 +125,38 @@ body {
   margin: -10px;
 }
 
+@media (min-width: 992px) {
+  header {
+    background-color: #f1f1f1;
+    width: auto;
+    margin-left: -5px;
+    padding-right: 10px;
+    margin-right: -7px;
+    margin-bottom: -5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header {
+    background-color: #f1f1f1;
+    width: auto;
+    margin-left: -10px;
+    padding-right: 10px;
+    margin-right: -7px;
+    margin-bottom: -5px;
+  }
+}
+
+@media (min-width: 992px) {
+  header img {
+    border-radius: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header img {
+    border-radius: 20px;
+  }
+}
+
 .head-loc {
   font-family: "robotoregular";
   font-size: 0.9em;
@@ -354,6 +386,11 @@ ul {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .nav {
+    margin-left: 1%;
+  }
+}
 .nav h1 {
   margin-bottom: -5px;
 }
@@ -445,7 +482,12 @@ ul {
   margin-right: 15px;
 }
 
-article {
+input[type=checkbox],
+input[type=radio] {
+  display: none;
+}
+
+.article {
   display: flex;
   flex-direction: column;
   background-color: rgba(241, 241, 241, 0.8);
@@ -455,39 +497,32 @@ article {
   margin-top: -20px;
   padding-bottom: 1%;
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  article {
-    align-items: center;
-    margin: auto;
-  }
-}
-article h1 {
-  font-size: 2em;
-  margin: 5%;
-}
-@media (min-width: 992px) {
-  article h1 {
-    display: flex;
-    justify-content: center;
-    margin-top: -50px;
-  }
-}
-
-input[type=checkbox],
-input[type=radio] {
-  display: none;
-}
-
 @media (min-width: 992px) {
   .article {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .article {
+    align-items: center;
+    margin: auto;
+  }
+}
+.article h1 {
+  font-size: 2em;
+  margin: 5%;
+}
+@media (min-width: 992px) {
+  .article h1 {
+    display: flex;
+    justify-content: center;
+  }
+}
 .article-background1 {
   position: relative;
-  padding: 1px;
   background-color: white;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   border-radius: 20px;
@@ -497,8 +532,6 @@ input[type=radio] {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background1 {
-    padding: 2px;
-    padding-right: 64px;
     background-color: white;
     box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
     border-radius: 20px;
@@ -542,7 +575,6 @@ input[type=radio] {
 }
 .article-background2 {
   position: relative;
-  padding: 1px;
   background-color: white;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   border-radius: 20px;
@@ -552,8 +584,6 @@ input[type=radio] {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background2 {
-    padding: 2px;
-    padding-right: 64px;
     background-color: white;
     box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
     border-radius: 20px;
@@ -597,7 +627,6 @@ input[type=radio] {
 }
 .article-background3 {
   position: relative;
-  padding: 1px;
   background-color: white;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   border-radius: 20px;
@@ -607,8 +636,6 @@ input[type=radio] {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background3 {
-    padding: 2px;
-    padding-right: 64px;
     background-color: white;
     box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
     border-radius: 20px;
@@ -713,7 +740,6 @@ input[type=radio] {
 }
 .article-background4 {
   position: relative;
-  padding: 1px;
   background-color: white;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   border-radius: 20px;
@@ -723,8 +749,6 @@ input[type=radio] {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background4 {
-    padding: 2px;
-    padding-right: 64px;
     background-color: white;
     box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
     border-radius: 20px;
@@ -854,6 +878,16 @@ footer li {
   margin-top: 10px;
   margin-left: -8px;
 }
+@media (min-width: 992px) {
+  .head-img {
+    margin-left: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .head-img {
+    margin-left: 27%;
+  }
+}
 
 .head-container {
   font-family: "shrikhand";
@@ -869,6 +903,26 @@ footer li {
   margin-right: -10px;
   border-radius: 40px;
 }
+@media (min-width: 992px) {
+  .head-container {
+    margin-left: -1%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .head-container {
+    margin-left: -1%;
+  }
+}
+@media (min-width: 992px) {
+  .head-container h1 {
+    margin-left: 1%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .head-container h1 {
+    margin-left: 1%;
+  }
+}
 
 input[type=radio]:checked + .menu-container .icon-checkmark-outline {
   transform: rotate(360deg);
@@ -878,7 +932,7 @@ input[type=radio]:checked + .menu-container > .bg-anim {
   width: 80px;
 }
 input[type=radio]:checked + .menu-container > .menu-text p:nth-child(2) {
-  transform: translate(-70px);
+  transform: translate(-80px);
 }
 input[type=radio]:checked + .menu-container > .menu-text h2,
 input[type=radio]:checked + .menu-container p:nth-child(1) {
@@ -886,6 +940,18 @@ input[type=radio]:checked + .menu-container p:nth-child(1) {
   overflow: hidden;
   white-space: nowrap;
   width: 200px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  input[type=radio]:checked + .menu-container > .menu-text h2,
+input[type=radio]:checked + .menu-container p:nth-child(1) {
+    overflow: visible;
+  }
+}
+@media (min-width: 992px) {
+  input[type=radio]:checked + .menu-container > .menu-text h2,
+input[type=radio]:checked + .menu-container p:nth-child(1) {
+    overflow: visible;
+  }
 }
 
 input[type=radio]:checked + .menu-container2 .icon-checkmark-outline {
@@ -896,7 +962,7 @@ input[type=radio]:checked + .menu-container2 > .bg-anim {
   width: 80px;
 }
 input[type=radio]:checked + .menu-container2 > .menu-text p:nth-child(2) {
-  transform: translate(-70px);
+  transform: translate(-80px);
 }
 input[type=radio]:checked + .menu-container2 > .menu-text h2,
 input[type=radio]:checked + .menu-container2 p:nth-child(1) {
@@ -904,6 +970,18 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   overflow: hidden;
   white-space: nowrap;
   width: 200px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  input[type=radio]:checked + .menu-container2 > .menu-text h2,
+input[type=radio]:checked + .menu-container2 p:nth-child(1) {
+    overflow: visible;
+  }
+}
+@media (min-width: 992px) {
+  input[type=radio]:checked + .menu-container2 > .menu-text h2,
+input[type=radio]:checked + .menu-container2 p:nth-child(1) {
+    overflow: visible;
+  }
 }
 
 .menu {
@@ -914,7 +992,7 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   font-family: "robotoregular";
   font-weight: 100;
   font-size: 1em;
-  margin-left: 0px;
+  margin-left: 1px;
   border-bottom: solid 3px #99E2D0;
   width: 40px;
   margin-top: 12%;
@@ -942,7 +1020,7 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   width: 80px;
 }
 .menu-container:hover > .menu-text p:nth-child(2) {
-  transform: translate(-70px);
+  transform: translate(-80px);
 }
 .menu-container:hover > .menu-text h2,
 .menu-container p:nth-child(1) {
@@ -950,6 +1028,18 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   overflow: hidden;
   white-space: nowrap;
   width: 200px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .menu-container:hover > .menu-text h2,
+.menu-container p:nth-child(1) {
+    overflow: visible;
+  }
+}
+@media (min-width: 992px) {
+  .menu-container:hover > .menu-text h2,
+.menu-container p:nth-child(1) {
+    overflow: visible;
+  }
 }
 .menu-soustitre {
   margin-left: 20px;
@@ -961,7 +1051,7 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
 .menu-prix {
   transition: transform 300ms ease-in-out;
   position: absolute;
-  right: 25px;
+  right: 5px;
   bottom: 18px;
   font-family: "robotobold";
 }
@@ -992,7 +1082,7 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   width: 80px;
 }
 .menu-container2:hover > .menu-text p:nth-child(2) {
-  transform: translate(-70px);
+  transform: translate(-80px);
 }
 .menu-container2:hover > .menu-text h2,
 .menu-container2 p:nth-child(1) {
@@ -1000,6 +1090,18 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   overflow: hidden;
   white-space: nowrap;
   width: 200px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .menu-container2:hover > .menu-text h2,
+.menu-container2 p:nth-child(1) {
+    overflow: visible;
+  }
+}
+@media (min-width: 992px) {
+  .menu-container2:hover > .menu-text h2,
+.menu-container2 p:nth-child(1) {
+    overflow: visible;
+  }
 }
 .menu-container2 h2 {
   margin-left: 18px;
@@ -1071,6 +1173,11 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   transform: translateY(-20px);
   transition: transform 100ms ease-in-out 50ms;
 }
+@media (min-width: 992px) {
+  .menu-anim1 {
+    margin-left: 10px;
+  }
+}
 
 .menu-anim2 {
   opacity: 0;
@@ -1081,6 +1188,11 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   transform: translateY(-20px);
   transition: transform 100ms ease-in-out 50ms;
 }
+@media (min-width: 992px) {
+  .menu-anim2 {
+    margin-left: 10px;
+  }
+}
 
 .menu-anim3 {
   opacity: 0;
@@ -1090,6 +1202,11 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   animation-fill-mode: both;
   transform: translateY(-20px);
   transition: transform 100ms ease-in-out 50ms;
+}
+@media (min-width: 992px) {
+  .menu-anim3 {
+    margin-left: 10px;
+  }
 }
 
 @keyframes apparition {

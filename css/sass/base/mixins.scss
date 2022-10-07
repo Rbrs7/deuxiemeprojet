@@ -62,7 +62,6 @@
 
 @mixin background-box {
     position: relative;
-    padding: 1px;
     background-color: white;
     box-shadow: $box-shadow-btn;
     border-radius: 20px;
@@ -72,8 +71,6 @@
 }
 
 @mixin background-box-tablet {
-    padding: 2px;
-    padding-right: 64px;
     background-color: white;
     box-shadow: $box-shadow-btn;
     border-radius: 20px;
