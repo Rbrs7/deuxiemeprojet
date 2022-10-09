@@ -13,6 +13,10 @@ body {
 }
 
 header {
+
+    margin-right: 3px;
+
+
     @media (min-width:992px) {
         background-color: #f1f1f1;
         width: auto;
@@ -659,9 +663,9 @@ footer {
     padding: 25px;
     position: relative;
     margin-top: -20px;
-    margin-left: -15px;
-    margin-right: -10px;
-    border-radius: 40px;
+    margin-left: -20px;
+    margin-right: -11px;
+    border-radius: 35px;
 
     @media (min-width:992px) {
         margin-left: -1%;
