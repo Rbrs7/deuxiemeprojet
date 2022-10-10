@@ -113,7 +113,13 @@
 /* Variables */ /* Mixins*/
 body {
   font-family: "robotoregular";
-  width: auto;
+}
+@media (min-width: 992px) {
+  body {
+    max-width: 900px;
+    width: auto;
+    margin: auto;
+  }
 }
 
 .head-logo {
@@ -122,7 +128,6 @@ body {
   justify-items: center;
   padding-top: 25px;
   padding-bottom: 10px;
-  margin: -10px;
 }
 
 header {
@@ -151,15 +156,9 @@ header {
 
 @media (min-width: 992px) {
   header img {
-    border-radius: 20px;
+    margin-left: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  header img {
-    border-radius: 20px;
-  }
-}
-
 .head-loc {
   font-family: "robotoregular";
   font-size: 0.9em;
@@ -173,6 +172,13 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 0px -1px 4px 1px rgba(170, 170, 170, 0.81);
+}
+@media (min-width: 992px) {
+  .head-loc {
+    margin: 0;
+    margin-left: 3px;
+    margin-right: -6px;
+  }
 }
 
 .icon-location {
@@ -191,6 +197,7 @@ header {
 @media (min-width: 992px) {
   .head {
     padding-top: 2%;
+    margin: 0;
   }
 }
 .head-title {
@@ -240,10 +247,10 @@ header {
 }
 @media (min-width: 992px) {
   .head-btn {
-    margin-left: 35%;
+    margin-left: 30%;
     margin-bottom: -10%;
     padding: 14px;
-    width: 30%;
+    width: 40%;
     font-family: "robotoregular";
     font-size: 1.5em;
     color: #FFFFFF;
@@ -281,7 +288,7 @@ ul {
 @media (min-width: 768px) and (max-width: 992px) {
   .icon-number {
     position: relative;
-    top: 65px;
+    top: 76px;
     right: 20px;
     font-size: 30px;
     color: #9356DC;
@@ -307,7 +314,7 @@ ul {
 @media (min-width: 768px) and (max-width: 992px) {
   .icon-number1 {
     position: relative;
-    top: 65px;
+    top: 76px;
     right: 20px;
     font-size: 30px;
     color: #9356DC;
@@ -333,7 +340,7 @@ ul {
 @media (min-width: 768px) and (max-width: 992px) {
   .icon-number2 {
     position: relative;
-    top: 65px;
+    top: 76px;
     right: 20px;
     font-size: 30px;
     color: #9356DC;
@@ -813,15 +820,11 @@ footer img {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   footer img {
-    height: 30px;
-    width: 120px;
     margin-right: 20px;
   }
 }
 @media (min-width: 992px) {
   footer img {
-    height: 30px;
-    width: 120px;
     margin-right: 20px;
   }
 }
@@ -927,6 +930,10 @@ footer li {
   }
 }
 
+.menu {
+  padding-bottom: 20px;
+}
+
 input[type=radio]:checked + .menu-container .icon-checkmark-outline {
   transform: rotate(360deg);
 }
@@ -934,62 +941,32 @@ input[type=radio]:checked + .menu-container > .bg-anim {
   opacity: 1;
   width: 80px;
 }
-input[type=radio]:checked + .menu-container > .menu-text p:nth-child(2) {
+input[type=radio]:checked + .menu-container > .menu-text .menu-prix {
   transform: translate(-80px);
 }
-input[type=radio]:checked + .menu-container > .menu-text h2,
-input[type=radio]:checked + .menu-container p:nth-child(1) {
+input[type=radio]:checked + .menu-container > .menu-text .title,
+input[type=radio]:checked + .menu-container .menu-soustitre {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   width: 200px;
+  display: block;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  input[type=radio]:checked + .menu-container > .menu-text h2,
-input[type=radio]:checked + .menu-container p:nth-child(1) {
+  input[type=radio]:checked + .menu-container > .menu-text .title,
+input[type=radio]:checked + .menu-container .menu-soustitre {
     overflow: visible;
   }
 }
 @media (min-width: 992px) {
-  input[type=radio]:checked + .menu-container > .menu-text h2,
-input[type=radio]:checked + .menu-container p:nth-child(1) {
-    overflow: visible;
-  }
-}
-
-input[type=radio]:checked + .menu-container2 .icon-checkmark-outline {
-  transform: rotate(360deg);
-}
-input[type=radio]:checked + .menu-container2 > .bg-anim {
-  opacity: 1;
-  width: 80px;
-}
-input[type=radio]:checked + .menu-container2 > .menu-text p:nth-child(2) {
-  transform: translate(-80px);
-}
-input[type=radio]:checked + .menu-container2 > .menu-text h2,
-input[type=radio]:checked + .menu-container2 p:nth-child(1) {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 200px;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  input[type=radio]:checked + .menu-container2 > .menu-text h2,
-input[type=radio]:checked + .menu-container2 p:nth-child(1) {
-    overflow: visible;
-  }
-}
-@media (min-width: 992px) {
-  input[type=radio]:checked + .menu-container2 > .menu-text h2,
-input[type=radio]:checked + .menu-container2 p:nth-child(1) {
+  input[type=radio]:checked + .menu-container > .menu-text .title,
+input[type=radio]:checked + .menu-container .menu-soustitre {
     overflow: visible;
   }
 }
 
 .menu {
   margin-left: 10px;
-  margin-top: -40px;
 }
 .menu h1 {
   font-family: "robotoregular";
@@ -1014,6 +991,7 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   margin-right: 10px;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
   cursor: pointer;
+  height: 78px;
 }
 .menu-container:hover .icon-checkmark-outline {
   transform: rotate(360deg);
@@ -1022,25 +1000,25 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   opacity: 1;
   width: 80px;
 }
-.menu-container:hover > .menu-text p:nth-child(2) {
+.menu-container:hover > .menu-text .menu-prix {
   transform: translate(-80px);
 }
-.menu-container:hover > .menu-text h2,
-.menu-container p:nth-child(1) {
+.menu-container:hover > .title,
+.menu-container .menu-soustitre {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   width: 200px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .menu-container:hover > .menu-text h2,
-.menu-container p:nth-child(1) {
+  .menu-container:hover > .title,
+.menu-container .menu-soustitre {
     overflow: visible;
   }
 }
 @media (min-width: 992px) {
-  .menu-container:hover > .menu-text h2,
-.menu-container p:nth-child(1) {
+  .menu-container:hover > .title,
+.menu-container .menu-soustitre {
     overflow: visible;
   }
 }
@@ -1048,8 +1026,15 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   margin-left: 20px;
   margin-top: -10px;
 }
-.menu-container h2 {
-  margin-left: 18px;
+.menu-container .title {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  padding-left: 18px;
 }
 .menu-prix {
   transition: transform 300ms ease-in-out;
@@ -1057,63 +1042,22 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   right: 5px;
   bottom: 18px;
   font-family: "robotobold";
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .menu-flex {
   display: flex;
   justify-content: space-between;
-}
-.menu-container2 {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  font-size: 0.8em;
-  background-color: white;
-  border-radius: 20px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  margin-bottom: 80px;
-  margin-right: 10px;
-  box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
-  cursor: pointer;
-}
-.menu-container2:hover .icon-checkmark-outline {
-  transform: rotate(360deg);
-  transition: 0.6s;
-}
-.menu-container2:hover > .bg-anim {
-  opacity: 1;
-  width: 80px;
-}
-.menu-container2:hover > .menu-text p:nth-child(2) {
-  transform: translate(-80px);
-}
-.menu-container2:hover > .menu-text h2,
-.menu-container2 p:nth-child(1) {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 200px;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .menu-container2:hover > .menu-text h2,
-.menu-container2 p:nth-child(1) {
-    overflow: visible;
-  }
-}
-@media (min-width: 992px) {
-  .menu-container2:hover > .menu-text h2,
-.menu-container2 p:nth-child(1) {
-    overflow: visible;
-  }
-}
-.menu-container2 h2 {
-  margin-left: 18px;
 }
 .menu-btn {
   position: relative;
   bottom: 25px;
   left: 5px;
   margin-bottom: 50px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   margin-left: 24%;
@@ -1149,6 +1093,7 @@ input[type=radio]:checked + .menu-container2 p:nth-child(1) {
   transition: all 330ms ease-in-out;
   position: absolute;
   right: 0;
+  bottom: 0;
   height: 80px;
   width: 10px;
   display: flex;

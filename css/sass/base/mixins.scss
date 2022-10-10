@@ -36,10 +36,10 @@
 }
 
 @mixin btn-computer {
-    margin-left: 35%;
+    margin-left: 30%;
     margin-bottom: -10%;
     padding: 14px;
-    width: 30%;
+    width: 40%;
     font-family: 'robotoregular';
     font-size: 1.5em;
     color: #FFFFFF;
@@ -95,7 +95,7 @@
 
 @mixin icon-number-tablet {
     position: relative;
-    top: 65px;
+    top: 76px;
     right: 20px;
     font-size: 30px;
     color: $primary;
@@ -116,12 +116,12 @@
 }
 
 @mixin header-logo {
+    
     display: flex;
     justify-content: center;
     justify-items: center;
     padding-top: 25px;
     padding-bottom: 10px;
-    margin: -10px;
 }
 
 @mixin container-annexe{

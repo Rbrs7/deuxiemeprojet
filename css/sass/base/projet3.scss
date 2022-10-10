@@ -5,7 +5,12 @@
 
 body {
     font-family: 'robotoregular';
-    width: auto;
+
+    @media (min-width:992px) {
+        max-width: 900px;
+        width: auto;
+        margin: auto
+    }
 }
 
 .head-logo {
@@ -39,11 +44,10 @@ header {
 
 header img {
     @media (min-width:992px) {
-        border-radius: 20px;
+        margin-left: 10px;
     }
 
     @media (min-width:768px) and (max-width:992px) {
-        border-radius: 20px;
     }
 }
 
@@ -60,6 +64,12 @@ header img {
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 0px -1px 4px 1px rgba(170, 170, 170, 0.81);
+
+    @media (min-width:992px) {
+        margin: 0;
+        margin-left: 3px;
+        margin-right: -6px;
+    }
 }
 
 .icon-location {
@@ -78,6 +88,7 @@ header img {
 
     @media (min-width:992px) {
         padding-top: 2%;
+        margin: 0;
     }
 
     &-title {
@@ -580,14 +591,10 @@ footer {
         filter: invert(1);
 
         @media (min-width:768px) and (max-width:992px) {
-            height: 30px;
-            width: 120px;
             margin-right: 20px;
         }
 
         @media (min-width:992px) {
-            height: 30px;
-            width: 120px;
             margin-right: 20px;
         }
     }
@@ -687,6 +694,9 @@ footer {
 
 }
 
+.menu {
+    padding-bottom: 20px;
+}
 input[type="radio"]:checked+.menu-container {
 
     .icon-checkmark-outline {
@@ -698,17 +708,19 @@ input[type="radio"]:checked+.menu-container {
         width: 80px;
     }
 
-    >.menu-text p:nth-child(2) {
+    >.menu-text .menu-prix {
         transform: translate(-80px);
     }
 
-    >.menu-text h2,
-    p:nth-child(1) {
+    >.menu-text .title,
+    .menu-soustitre {
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
         width: 200px;
-
+        display: block;
+        
+       
         @media (min-width:768px) and (max-width:992px) {
             overflow: visible;
         }
@@ -719,41 +731,10 @@ input[type="radio"]:checked+.menu-container {
     }
 }
 
-input[type="radio"]:checked+.menu-container2 {
-
-    .icon-checkmark-outline {
-        transform: rotate(360deg);
-    }
-
-    >.bg-anim {
-        opacity: 1;
-        width: 80px;
-    }
-
-    >.menu-text p:nth-child(2) {
-        transform: translate(-80px);
-    }
-
-    >.menu-text h2,
-    p:nth-child(1) {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        width: 200px;
-
-        @media (min-width:768px) and (max-width:992px) {
-            overflow: visible;
-        }
-
-        @media (min-width:992px) {
-            overflow: visible;
-        }
-    }
-}
 
 .menu {
     margin-left: 10px;
-    margin-top: -40px;
+    
 
     & h1 {
         font-family: 'robotoregular';
@@ -779,6 +760,7 @@ input[type="radio"]:checked+.menu-container2 {
         margin-right: 10px;
         box-shadow: $box-shadow-btn;
         cursor: pointer;
+        height: 78px;
 
         &:hover .icon-checkmark-outline {
             transform: rotate(360deg);
@@ -789,12 +771,12 @@ input[type="radio"]:checked+.menu-container2 {
             width: 80px;
         }
 
-        &:hover>.menu-text p:nth-child(2) {
+        &:hover>.menu-text .menu-prix {
             transform: translate(-80px);
         }
 
-        &:hover>.menu-text h2,
-        p:nth-child(1) {
+        &:hover>.title,
+        .menu-soustitre {
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
@@ -817,8 +799,17 @@ input[type="radio"]:checked+.menu-container2 {
     }
 
 
-    &-container h2 {
-        margin-left: 18px;
+    &-container {
+        .title {
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            padding-left: 18px;
+        }
     }
 
     &-prix {
@@ -827,6 +818,11 @@ input[type="radio"]:checked+.menu-container2 {
         right: 5px;
         bottom: 18px;
         font-family: 'robotobold';
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
     }
 
     &-flex {
@@ -834,50 +830,12 @@ input[type="radio"]:checked+.menu-container2 {
         justify-content: space-between;
     }
 
-    &-container2 {
-        @include container-annexe;
-
-        &:hover .icon-checkmark-outline {
-            transform: rotate(360deg);
-            transition: 0.6s;
-        }
-
-        &:hover>.bg-anim {
-            opacity: 1;
-            width: 80px;
-        }
-
-        &:hover>.menu-text p:nth-child(2) {
-            transform: translate(-80px);
-        }
-
-        &:hover>.menu-text h2,
-        p:nth-child(1) {
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 200px;
-
-            @media (min-width:768px) and (max-width:992px) {
-                overflow: visible;
-            }
-
-            @media (min-width:992px) {
-                overflow: visible;
-            }
-        }
-
-    }
-
-    &-container2 h2 {
-        margin-left: 18px;
-    }
-
     &-btn {
         position: relative;
         bottom: 25px;
         left: 5px;
         margin-bottom: 50px;
+        margin-top: 50px;
         display: flex;
         justify-content: center;
         @include btn-1;
@@ -905,6 +863,7 @@ input[type="radio"]:checked+.menu-container2 {
     transition: all 330ms ease-in-out;
     position: absolute;
     right: 0;
+    bottom: 0;
     height: 80px;
     width: 10px;
     display: flex;
