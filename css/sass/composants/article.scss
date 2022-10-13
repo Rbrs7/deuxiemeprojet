@@ -1,0 +1,470 @@
+/* Article */
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+
+.article {
+
+    display: flex;
+    flex-direction: column;
+    @include background-light;
+    margin: -5px;
+    padding-top: 7%;
+    margin-bottom: 8%;
+    margin-top: -20px;
+    padding-bottom: 1%;
+
+    @media (min-width:992px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width:768px) and (max-width:992px) {
+        align-items: center;
+        margin: auto;
+    }
+
+    & h1 {
+        font-size: 2em;
+        margin: 5%;
+
+        @media (min-width:992px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &-background1 {
+        @include background-box;
+
+        @media (min-width:768px) and (max-width:992px) {
+            @include background-box-tablet;
+            margin-left: 10%;
+        }
+
+        @media (min-width:992px) {
+            @include background-box-desk;
+        }
+    }
+
+    &-image1 {
+        @include images-card;
+    }
+
+    &-group1 {
+        @include box;
+    }
+
+    &-icon1 {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &-group1 h2 {
+        font-family: 'robotobold';
+        font-size: 1.1em;
+    }
+
+    &-group1 p {
+        margin-top: -10px;
+    }
+
+    &-background2 {
+        @include background-box;
+
+        @media (min-width:768px) and (max-width:992px) {
+            @include background-box-tablet;
+            margin-left: 10%;
+        }
+
+        @media (min-width:992px) {
+            @include background-box-desk;
+        }
+    }
+
+    &-image2 {
+        @include images-card;
+    }
+
+    &-group2 {
+        @include box;
+    }
+
+    &-icon2 {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &-group2 h2 {
+        font-family: 'robotobold';
+        font-size: 1.1em;
+    }
+
+    &-group2 p {
+        margin-top: -10px;
+    }
+
+    &-background3 {
+        @include background-box;
+
+        @media (min-width:768px) and (max-width:992px) {
+            @include background-box-tablet;
+            margin-left: 10%;
+        }
+
+        @media (min-width:992px) {
+            @include background-box-desk;
+        }
+    }
+
+    &-image3 {
+        @include images-card;
+    }
+
+    &-group3 {
+        @include box;
+    }
+
+    &-icon3 {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &-heart {
+        margin-left: 149px;
+
+        @media (min-width:768px) and (max-width:992px) {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &-heart label,
+    &-heart2 label,
+    &-heart3 label,
+    &-heart4 label {
+        @include label;
+    }
+
+    &-heart input[type="checkbox"]:checked+label,
+    &-heart2 input[type="checkbox"]:checked+label,
+    &-heart3 input[type="checkbox"]:checked+label,
+    &-heart4 input[type="checkbox"]:checked+label,
+    &-heart5 input[type="checkbox"]:checked+label {
+        @include inputradio;
+    }
+
+    &-heart2 {
+        margin-left: 149px;
+
+        @media (min-width:768px) and (max-width:992px) {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &-heart3 {
+        margin-left: 186px;
+
+        @media (min-width:768px) and (max-width:992px) {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &-heart4 {
+        margin-left: 149px;
+
+        @media (min-width:768px) and (max-width:992px) {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &-heart5 label {
+        font-size: 1.4em;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        right: 21px;
+        opacity: 0;
+        transition: transform 100ms ease-out;
+        transform: scale(0.55);
+    }
+
+    &-group3 h2 {
+        font-family: 'robotobold';
+        font-size: 1.1em;
+    }
+
+    &-group3 p {
+        margin-top: -10px;
+    }
+
+    &-background4 {
+        @include background-box;
+
+        @media (min-width:768px) and (max-width:992px) {
+            @include background-box-tablet;
+            margin-left: 10%;
+            margin-bottom: 12%;
+        }
+
+        @media (min-width:992px) {
+            @include background-box-desk;
+        }
+    }
+
+    &-image4 {
+        @include images-card;
+    }
+
+    &-group4 {
+        @include box;
+    }
+
+    &-icon4 {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &-group4 h2 {
+        font-family: 'robotobold';
+        font-size: 1.1em;
+    }
+
+    &-group4 p {
+        margin-top: -10px;
+    }
+}
+
+    /* Articles menus restaurants */
+
+.menu {
+    margin-left: 10px;
+    
+    & h1 {
+        font-family: 'robotoregular';
+        font-weight: 100;
+        font-size: 1em;
+        margin-left: 1px;
+        border-bottom: solid 3px $tertiary;
+        width: 40px;
+        margin-top: 12%;
+        margin-bottom: 15px;
+    }
+
+    &-container {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.8em;
+        background-color: white;
+        border-radius: 20px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        box-shadow: $box-shadow-btn;
+        cursor: pointer;
+        height: 78px;
+
+        &:hover .icon-checkmark-outline {
+            transform: rotate(360deg);
+        }
+
+        &:hover>.bg-anim {
+            opacity: 1;
+            width: 80px;
+        }
+
+        &:hover>.menu-text .menu-prix {
+            transform: translate(-80px);
+        }
+
+        &:hover>.title,
+        .menu-soustitre {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 200px;
+
+
+            @media (min-width:768px) and (max-width:992px) {
+                overflow: visible;
+            }
+
+            @media (min-width:992px) {
+                overflow: visible;
+            }
+        }
+    }
+
+    &-soustitre {
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+
+
+    &-container {
+        .title {
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            padding-left: 18px;
+        }
+    }
+
+    &-prix {
+        transition: transform 300ms ease-in-out;
+        position: absolute;
+        right: 5px;
+        bottom: 18px;
+        font-family: 'robotobold';
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    &-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-btn {
+        position: relative;
+        bottom: 25px;
+        left: 5px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        @include btn-1;
+        width: 53%;
+        padding: 12px;
+        font-size: 1.1em;
+        box-shadow: $box-shadow-btn;
+
+        @media (min-width:992px) {
+            width: 20%;
+            margin-left: 38%;
+        }
+    }
+
+    &-btn:hover {
+        background: linear-gradient(lighten($secondary, 5%), $primary);
+        box-shadow: 1px 5px 12px -1px darken($box-shadow-color, 50%);
+    }
+}
+
+/* Animation apparition du menu */
+
+.menu-anim1 {
+    opacity: 0;
+    animation-name: apparition;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+    transform: translateY(-20px);
+    transition: transform 100ms ease-in-out 50ms;
+
+    @media (min-width:992px) {
+        margin-left: 10px;
+    }
+}
+
+.menu-anim2 {
+    opacity: 0;
+    animation-name: apparition;
+    animation-duration: 800ms;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
+    transform: translateY(-20px);
+    transition: transform 100ms ease-in-out 50ms;
+
+    @media (min-width:992px) {
+        margin-left: 10px;
+    }
+}
+
+.menu-anim3 {
+    opacity: 0;
+    animation-name: apparition;
+    animation-duration: 800ms;
+    animation-delay: 1.6s;
+    animation-fill-mode: both;
+    transform: translateY(-20px);
+    transition: transform 100ms ease-in-out 50ms;
+
+    @media (min-width:992px) {
+        margin-left: 10px;
+    }
+}
+
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    15% {
+        opacity: .1;
+        transform: translateY(-16px);
+    }
+
+    25% {
+        opacity: .2;
+        transform: translateY(-11px);
+    }
+
+    45% {
+        opacity: .4;
+        transform: translateY(-2px);
+    }
+
+    85% {
+        opacity: .8;
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Animation checkmark plats réstaurants */
+
+.bg-anim {
+    opacity: 0;
+    transition: all 330ms ease-in-out;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $tertiary;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.icon-checkmark-outline {
+    transition: transform 0.6s;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 1.7em;
+    cursor: pointer;
+}

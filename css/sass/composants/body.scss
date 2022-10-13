@@ -1,0 +1,76 @@
+/* Body & général */
+
+body {
+    font-family: 'robotoregular';
+
+    @media (min-width:992px) {
+        max-width: 900px;
+        width: auto;
+        margin: auto
+    }
+}
+
+a:visited {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Animation loading spinner */
+
+.loader {
+    /* Création du loader */
+    opacity: 1;
+    border: 10px solid #FFFFFF;
+    border-top: 10px solid $primary;
+    border-bottom: 10px solid $secondary;
+    border-right: 10px solid #FFFFFF;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1.5s linear infinite;
+    animation-fill-mode: forwards;
+    /* Placement loader */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@keyframes spin {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.bloc-page {
+    opacity: 0;
+    animation: load_page 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    background-color: white;
+}
+
+@keyframes load_page {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

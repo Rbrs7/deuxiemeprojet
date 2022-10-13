@@ -1,0 +1,190 @@
+/* Header */
+
+.head-logo {
+    @include header-logo;
+
+    @media (min-width:992px) {
+        margin-left: 1%;
+    }
+
+    @media (min-width:768px) and (max-width:992px) {
+        margin-left: 1%;
+    }
+}
+
+header {
+
+    margin-right: 3px;
+
+
+    @media (min-width:992px) {
+        background-color: #f1f1f1;
+        width: auto;
+        margin-left: -5px;
+        padding-right: 10px;
+        margin-right: -7px;
+        margin-bottom: -5px;
+        border-radius: 20px;
+    }
+
+    @media (min-width:768px) and (max-width:992px) {
+        background-color: #f1f1f1;
+        width: auto;
+        margin-top: -7px;
+        margin-left: -10px;
+        padding-right: 10px;
+        margin-right: -7px;
+    }
+}
+
+.head-loc {
+    font-family: 'robotoregular';
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row-reverse;
+    background-color: $background;
+    margin-left: -8px;
+    margin-right: -10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px -1px 4px 1px rgba(170, 170, 170, 0.81);
+
+    @media (min-width:992px) {
+        margin: 0;
+        margin-left: 3px;
+        margin-right: -6px;
+    }
+}
+
+.icon-location {
+    font-size: $size-ico;
+    color: $color-ico;
+    padding-right: 10px;
+
+}
+
+.head {
+    @include background-light;
+    margin: -14px;
+    padding-top: 8%;
+    padding-bottom: 1%;
+    margin-bottom: 30px;
+
+    @media (min-width:992px) {
+        padding-top: 2%;
+        margin: 0;
+    }
+
+    &-title {
+        font-family: 'robotoregular';
+        font-size: 0.7em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 12%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    &-subtitle {
+        font-family: 'robotoitalic';
+        font-size: 1.32em;
+        margin-top: -8px;
+        margin-bottom: 8%;
+    }
+
+    &-btn {
+        margin-left: 8%;
+        padding: 14px;
+        width: 85%;
+        font-family: 'robotoregular';
+        font-size: 1.5em;
+        color: #FFFFFF;
+        background: linear-gradient($secondary, $primary);
+        border-radius: 35px;
+        border: 0px solid #FFFFFF;
+        box-shadow: 0px 5px 11px -2px rgba(127, 127, 127, 0.71);
+        cursor: pointer;
+
+        @media (min-width:768px) and (max-width:992px) {
+            @include btn-tablet;
+        }
+
+        @media (min-width:992px) {
+            @include btn-computer;
+        }
+
+    }
+
+    &-btn:hover {
+        background: linear-gradient(lighten($secondary, 5%), $primary);
+        box-shadow: 1px 5px 12px -1px darken($box-shadow-color, 50%);
+    }
+
+}
+
+.icon-number {
+    @include icon-number;
+
+    @media (min-width:768px) and (max-width:992px) {
+        @include icon-number-tablet;
+    }
+
+    @media (min-width:992px) {
+        @include icon-number-desk;
+    }
+
+}
+
+    /* Header "menu restaurants" */
+
+.head-img {
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: -8px;
+
+    @media (min-width:992px) {
+        margin-left: 29%;
+    }
+
+    @media (min-width:768px) and (max-width:992px) {
+        margin-left: 27%;
+    }
+}
+
+.head-container {
+    font-family: 'shrikhand';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include background-light2;
+    font-size: 0.8em;
+    padding: 25px;
+    position: relative;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -11px;
+    border-radius: 35px;
+
+    @media (min-width:992px) {
+        margin-left: 0;
+    }
+
+    @media (min-width:768px) and (max-width:992px) {
+        margin-left: -1%;
+    }
+
+    & h1 {
+        @media (min-width: 992px) {
+            margin-left: 35%;
+        }
+
+        @media (min-width:768px) and (max-width:992px) {
+            margin-left: 35%;
+        }
+    }
+
+}

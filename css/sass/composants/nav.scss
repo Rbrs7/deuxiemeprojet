@@ -1,0 +1,168 @@
+/* Nav */
+
+.icon-number1 {
+    @include icon-number;
+
+    @media (min-width:768px) and (max-width:992px) {
+        @include icon-number-tablet;
+    }
+
+    @media (min-width:992px) {
+        @include icon-number-desk;
+    }
+}
+
+.icon-number2 {
+    @include icon-number;
+
+    @media (min-width:768px) and (max-width:992px) {
+        @include icon-number-tablet;
+    }
+
+    @media (min-width:992px) {
+        @include icon-number-desk;
+    }
+}
+
+.icon-tablet,
+.icon-list-bullet,
+.icon-store-front {
+    font-size: $size-ico+2px;
+    color: rgba(73, 72, 72, 0.8);
+    margin-right: 20px;
+    margin-top: 18px;
+}
+
+.anim-heart,
+.anim-heart-index {
+    position: relative;
+    cursor: pointer;
+}
+
+.icon-heart-regular {
+    font-size: $size-ico+2px;
+}
+
+.anim-heart-index span {
+    font-size: $size-ico;
+    position: absolute;
+    bottom: 2px;
+}
+
+.anim-heart span {
+    font-size: $size-ico;
+    position: absolute;
+    bottom: -8px;
+}
+
+.nav h1 {
+    font-size: 1.4em;
+    margin-bottom: 10%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width:768px) and (max-width:992px) {
+        margin-left: 1%;
+    }
+
+    & h1 {
+        margin-bottom: -5px;
+    }
+
+    &-container1 {
+        padding-left: 8%;
+        padding-right: 21%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        @include background-light;
+        border-radius: 20px;
+        border: 0px solid #FFFFFF;
+        box-shadow: $box-shadow-btn;
+        margin-bottom: 2%;
+
+        & a {
+            display: flex;
+
+            @media (min-width:768px) and (max-width:992px) {
+                justify-content: center;
+                margin-left: 15%;
+            }
+
+            @media (min-width:992px) {
+                justify-content: center;
+                margin-left: 15%;
+            }
+
+        }
+    }
+
+    &-container2 {
+        padding-left: 8%;
+        padding-right: 25%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        @include background-light;
+        border-radius: 20px;
+        border: 0px solid #FFFFFF;
+        box-shadow: $box-shadow-btn;
+        margin-bottom: 2%;
+
+        & a {
+            display: flex;
+            flex-direction: row;
+
+            @media (min-width:768px) and (max-width:992px) {
+                justify-content: center;
+                margin-left: 20%;
+            }
+
+            @media (min-width:992px) {
+                justify-content: center;
+                margin-left: 21.5%;
+            }
+
+
+        }
+
+    }
+
+    &-container3 {
+        padding-left: 8%;
+        padding-right: 24%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        @include background-light;
+        border-radius: 20px;
+        border: 0px solid #FFFFFF;
+        box-shadow: $box-shadow-btn;
+        margin-bottom: 20%;
+
+        @media (min-width:992px) {
+            margin-bottom: 10%;
+        }
+
+        & a {
+            display: flex;
+
+            @media (min-width:768px) and (max-width:992px) {
+                justify-content: center;
+                margin-left: 20%;
+            }
+
+            @media (min-width:992px) {
+                justify-content: center;
+                margin-left: 21%;
+            }
+
+        }
+
+    }
+
+    &-group {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
