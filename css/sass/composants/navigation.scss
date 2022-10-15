@@ -82,6 +82,7 @@
         border: 0px solid #FFFFFF;
         box-shadow: $box-shadow-btn;
         margin-bottom: 2%;
+        cursor: pointer;
 
 
         & a {
@@ -110,6 +111,7 @@
         border: 0px solid #FFFFFF;
         box-shadow: $box-shadow-btn;
         margin-bottom: 2%;
+        cursor: pointer;
 
         & a {
             display: flex;
@@ -140,6 +142,7 @@
         border: 0px solid #FFFFFF;
         box-shadow: $box-shadow-btn;
         margin-bottom: 20%;
+        cursor: pointer;
 
         @media (min-width:992px) {
             margin-bottom: 10%;
