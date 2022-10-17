@@ -185,8 +185,7 @@ ul {
   display: flex;
   justify-content: center;
   justify-items: center;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  padding-top: 10px;
 }
 @media (min-width: 992px) {
   .head-logo {
@@ -232,8 +231,7 @@ header {
   justify-items: center;
   flex-direction: row-reverse;
   background-color: rgba(233, 233, 233, 0.8);
-  margin-left: -8px;
-  margin-right: -10px;
+  margin-right: 8px;
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 0px -1px 4px 1px rgba(170, 170, 170, 0.81);
@@ -333,7 +331,7 @@ header {
 
 .icon-number {
   position: relative;
-  top: 60px;
+  top: 55px;
   right: 20px;
   font-size: 30px;
   color: #9356DC;
@@ -350,7 +348,7 @@ header {
 @media (min-width: 992px) {
   .icon-number {
     position: relative;
-    top: 80px;
+    top: 66px;
     right: 20px;
     font-size: 30px;
     color: #9356DC;
@@ -358,18 +356,20 @@ header {
 }
 
 /* Header "menu restaurants" */
-.head-img {
+.head-img img {
   object-fit: cover;
   margin-top: 10px;
   margin-left: -8px;
+  width: 105%;
+  height: 101%;
 }
 @media (min-width: 992px) {
-  .head-img {
+  .head-img img {
     margin-left: 29%;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .head-img {
+  .head-img img {
     margin-left: 27%;
   }
 }
@@ -381,12 +381,15 @@ header {
   justify-content: space-between;
   background-color: #f1f1f1;
   font-size: 0.8em;
-  padding: 25px;
+  padding: 17px;
   position: relative;
-  margin-top: -20px;
-  margin-left: -20px;
+  margin-top: -30px;
+  margin-left: -11px;
   margin-right: -11px;
-  border-radius: 35px;
+  margin-bottom: -37px;
+  width: auto;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 42px;
 }
 @media (min-width: 992px) {
   .head-container {
@@ -415,15 +418,32 @@ input[type=radio] {
   display: none;
 }
 
+article {
+  background-color: rgba(241, 241, 241, 0.8);
+  padding-top: 25px;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+article h1 {
+  margin-left: 14px;
+}
+
 .article {
   display: flex;
   flex-direction: column;
-  background-color: rgba(241, 241, 241, 0.8);
   margin: -5px;
   padding-top: 7%;
   margin-bottom: 8%;
   margin-top: -20px;
   padding-bottom: 1%;
+}
+.article-annexe {
+  background-color: #f1f1f1;
+  padding-top: 1px;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: -5px;
+  padding-bottom: 10px;
 }
 @media (min-width: 992px) {
   .article {
@@ -439,16 +459,6 @@ input[type=radio] {
     margin: auto;
   }
 }
-.article h1 {
-  font-size: 2em;
-  margin: 5%;
-}
-@media (min-width: 992px) {
-  .article h1 {
-    display: flex;
-    justify-content: center;
-  }
-}
 .article-background1 {
   position: relative;
   background-color: white;
@@ -457,6 +467,21 @@ input[type=radio] {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  margin-right: 17px;
+  margin-left: 17px;
+}
+.article-background1 p:nth-child(1) {
+  z-index: 1;
+  position: absolute;
+  right: 20px;
+  background-color: #99E2D0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #008766;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background1 {
@@ -509,6 +534,21 @@ input[type=radio] {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  margin-right: 17px;
+  margin-left: 17px;
+}
+.article-background2 p:nth-child(1) {
+  z-index: 1;
+  position: absolute;
+  right: 20px;
+  background-color: #99E2D0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #008766;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background2 {
@@ -561,6 +601,8 @@ input[type=radio] {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  margin-right: 17px;
+  margin-left: 17px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background3 {
@@ -599,7 +641,7 @@ input[type=radio] {
   align-items: flex-end;
 }
 .article-heart {
-  margin-left: 149px;
+  margin-left: 129px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-heart {
@@ -623,7 +665,7 @@ input[type=radio] {
   color: #9356DC;
 }
 .article-heart2 {
-  margin-left: 149px;
+  margin-left: 127px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-heart2 {
@@ -632,7 +674,7 @@ input[type=radio] {
   }
 }
 .article-heart3 {
-  margin-left: 186px;
+  margin-left: 165px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-heart3 {
@@ -641,7 +683,7 @@ input[type=radio] {
   }
 }
 .article-heart4 {
-  margin-left: 149px;
+  margin-left: 125px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-heart4 {
@@ -674,6 +716,8 @@ input[type=radio] {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  margin-right: 17px;
+  margin-left: 17px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .article-background4 {
@@ -728,10 +772,9 @@ input[type=radio] {
   font-family: "robotoregular";
   font-weight: 100;
   font-size: 1em;
-  margin-left: 1px;
+  margin-left: 5px;
   border-bottom: solid 3px #99E2D0;
   width: 40px;
-  margin-top: 12%;
   margin-bottom: 15px;
 }
 .menu-container {
@@ -831,6 +874,7 @@ input[type=radio] {
   padding: 12px;
   font-size: 1.1em;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
+  margin-bottom: 78px;
 }
 @media (min-width: 992px) {
   .menu-btn {
@@ -941,7 +985,7 @@ input[type=radio] {
 
 /* Footer */
 footer {
-  background-color: rgb(53, 53, 53);
+  background-color: rgb(51, 57, 70);
   padding-top: 30px;
   padding-bottom: 20px;
   margin-bottom: -10px;
@@ -1054,7 +1098,7 @@ input[type=radio]:checked + .menu-container .menu-soustitre {
 /* Nav */
 .icon-number1 {
   position: relative;
-  top: 60px;
+  top: 55px;
   right: 20px;
   font-size: 30px;
   color: #9356DC;
@@ -1071,7 +1115,7 @@ input[type=radio]:checked + .menu-container .menu-soustitre {
 @media (min-width: 992px) {
   .icon-number1 {
     position: relative;
-    top: 80px;
+    top: 66px;
     right: 20px;
     font-size: 30px;
     color: #9356DC;
@@ -1080,7 +1124,7 @@ input[type=radio]:checked + .menu-container .menu-soustitre {
 
 .icon-number2 {
   position: relative;
-  top: 60px;
+  top: 55px;
   right: 20px;
   font-size: 30px;
   color: #9356DC;
@@ -1097,7 +1141,7 @@ input[type=radio]:checked + .menu-container .menu-soustitre {
 @media (min-width: 992px) {
   .icon-number2 {
     position: relative;
-    top: 80px;
+    top: 66px;
     right: 20px;
     font-size: 30px;
     color: #9356DC;
@@ -1136,6 +1180,7 @@ input[type=radio]:checked + .menu-container .menu-soustitre {
 }
 
 .nav h1 {
+  margin-left: 5px;
   font-size: 1.4em;
   margin-bottom: 10%;
 }
@@ -1155,8 +1200,8 @@ input[type=radio]:checked + .menu-container .menu-soustitre {
 .nav-container1 {
   padding-left: 8%;
   padding-right: 21%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   background-color: rgba(241, 241, 241, 0.8);
   border-radius: 20px;
   border: 0px solid #FFFFFF;
@@ -1182,8 +1227,8 @@ input[type=radio]:checked + .menu-container .menu-soustitre {
 .nav-container2 {
   padding-left: 8%;
   padding-right: 25%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   background-color: rgba(241, 241, 241, 0.8);
   border-radius: 20px;
   border: 0px solid #FFFFFF;
@@ -1210,13 +1255,13 @@ input[type=radio]:checked + .menu-container .menu-soustitre {
 .nav-container3 {
   padding-left: 8%;
   padding-right: 24%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   background-color: rgba(241, 241, 241, 0.8);
   border-radius: 20px;
   border: 0px solid #FFFFFF;
   box-shadow: 0px 5px 11px -2px rgba(190, 190, 190, 0.71);
-  margin-bottom: 20%;
+  margin-bottom: 21%;
   cursor: pointer;
 }
 @media (min-width: 992px) {

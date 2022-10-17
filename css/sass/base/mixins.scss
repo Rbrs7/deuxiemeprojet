@@ -68,6 +68,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-right: 17px;
+    margin-left: 17px;
 }
 
 @mixin background-box-tablet {
@@ -87,7 +89,7 @@
 
 @mixin icon-number {
     position: relative;
-    top: 60px;
+    top: 55px;
     right: 20px;
     font-size: 30px;
     color: $primary;
@@ -103,7 +105,7 @@
 
 @mixin icon-number-desk {
     position: relative;
-    top: 80px;
+    top: 66px;
     right: 20px;
     font-size: 30px;
     color: $primary;
@@ -120,8 +122,7 @@
     display: flex;
     justify-content: center;
     justify-items: center;
-    padding-top: 25px;
-    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 @mixin container-annexe{

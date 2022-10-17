@@ -56,6 +56,7 @@
 }
 
 .nav h1 {
+    margin-left: 5px;
     font-size: 1.4em;
     margin-bottom: 10%;
 }
@@ -75,8 +76,8 @@
     &-container1 {
         padding-left: 8%;
         padding-right: 21%;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
         @include background-light;
         border-radius: 20px;
         border: 0px solid #FFFFFF;
@@ -104,8 +105,8 @@
     &-container2 {
         padding-left: 8%;
         padding-right: 25%;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
         @include background-light;
         border-radius: 20px;
         border: 0px solid #FFFFFF;
@@ -135,13 +136,13 @@
     &-container3 {
         padding-left: 8%;
         padding-right: 24%;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
         @include background-light;
         border-radius: 20px;
         border: 0px solid #FFFFFF;
         box-shadow: $box-shadow-btn;
-        margin-bottom: 20%;
+        margin-bottom: 21%;
         cursor: pointer;
 
         @media (min-width:992px) {

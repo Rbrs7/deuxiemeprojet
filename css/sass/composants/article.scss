@@ -5,11 +5,31 @@ input[type="radio"] {
     display: none;
 }
 
+article {
+    @include background-light;
+    padding-top: 25px;
+    margin-left: -6px;
+    margin-right: -6px;
+
+    & h1{
+        margin-left: 14px;
+    }
+
+}
+
 .article {
+
+    &-annexe{
+        background-color: #f1f1f1;
+        padding-top: 1px;
+        margin-left: -5px;
+        margin-right: -5px;
+        margin-top: -5px;
+        padding-bottom: 10px;
+    }
 
     display: flex;
     flex-direction: column;
-    @include background-light;
     margin: -5px;
     padding-top: 7%;
     margin-bottom: 8%;
@@ -28,17 +48,22 @@ input[type="radio"] {
         margin: auto;
     }
 
-    & h1 {
-        font-size: 2em;
-        margin: 5%;
-
-        @media (min-width:992px) {
-            display: flex;
-            justify-content: center;
-        }
-    }
-
     &-background1 {
+
+        & p:nth-child(1){
+            z-index: 1;
+            position: absolute;
+            right: 20px;
+            background-color: $tertiary;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 12px;
+            padding-right: 12px;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: $tertiary2;
+        }
+
         @include background-box;
 
         @media (min-width:768px) and (max-width:992px) {
@@ -74,6 +99,21 @@ input[type="radio"] {
     }
 
     &-background2 {
+
+        & p:nth-child(1){
+            z-index: 1;
+            position: absolute;
+            right: 20px;
+            background-color: $tertiary;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 12px;
+            padding-right: 12px;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: $tertiary2;
+        }
+
         @include background-box;
 
         @media (min-width:768px) and (max-width:992px) {
@@ -135,7 +175,7 @@ input[type="radio"] {
     }
 
     &-heart {
-        margin-left: 149px;
+        margin-left: 129px;
 
         @media (min-width:768px) and (max-width:992px) {
             position: absolute;
@@ -159,7 +199,7 @@ input[type="radio"] {
     }
 
     &-heart2 {
-        margin-left: 149px;
+        margin-left: 127px;
 
         @media (min-width:768px) and (max-width:992px) {
             position: absolute;
@@ -168,7 +208,7 @@ input[type="radio"] {
     }
 
     &-heart3 {
-        margin-left: 186px;
+        margin-left: 165px;
 
         @media (min-width:768px) and (max-width:992px) {
             position: absolute;
@@ -177,7 +217,7 @@ input[type="radio"] {
     }
 
     &-heart4 {
-        margin-left: 149px;
+        margin-left: 125px;
 
         @media (min-width:768px) and (max-width:992px) {
             position: absolute;
@@ -251,10 +291,9 @@ input[type="radio"] {
         font-family: 'robotoregular';
         font-weight: 100;
         font-size: 1em;
-        margin-left: 1px;
+        margin-left: 5px;
         border-bottom: solid 3px $tertiary;
         width: 40px;
-        margin-top: 12%;
         margin-bottom: 15px;
     }
 
@@ -354,6 +393,7 @@ input[type="radio"] {
         padding: 12px;
         font-size: 1.1em;
         box-shadow: $box-shadow-btn;
+        margin-bottom: 78px;
 
         @media (min-width:992px) {
             width: 20%;

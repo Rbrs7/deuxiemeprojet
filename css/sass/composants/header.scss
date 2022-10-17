@@ -45,8 +45,7 @@ header {
     justify-items: center;
     flex-direction: row-reverse;
     background-color: $background;
-    margin-left: -8px;
-    margin-right: -10px;
+    margin-right: 8px;
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 0px -1px 4px 1px rgba(170, 170, 170, 0.81);
@@ -141,10 +140,12 @@ header {
 
     /* Header "menu restaurants" */
 
-.head-img {
+.head-img img {
     object-fit: cover;
     margin-top: 10px;
     margin-left: -8px;
+    width: 105%;
+    height: 101%;
 
     @media (min-width:992px) {
         margin-left: 29%;
@@ -162,12 +163,15 @@ header {
     justify-content: space-between;
     @include background-light2;
     font-size: 0.8em;
-    padding: 25px;
+    padding: 17px;
     position: relative;
-    margin-top: -20px;
-    margin-left: -20px;
+    margin-top: -30px;
+    margin-left: -11px;
     margin-right: -11px;
-    border-radius: 35px;
+    margin-bottom: -37px;
+    width: auto;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 42px;
 
     @media (min-width:992px) {
         margin-left: 0;
@@ -178,6 +182,7 @@ header {
     }
 
     & h1 {
+
         @media (min-width: 992px) {
             margin-left: 35%;
         }
