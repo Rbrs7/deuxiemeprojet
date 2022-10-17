@@ -620,7 +620,7 @@ input[type=radio] {
 .article-heart input[type=checkbox]:checked + label, .article-heart2 input[type=checkbox]:checked + label, .article-heart3 input[type=checkbox]:checked + label, .article-heart4 input[type=checkbox]:checked + label, .article-heart5 input[type=checkbox]:checked + label {
   transform: scale(1.2);
   opacity: 1;
-  color: red;
+  color: #9356DC;
 }
 .article-heart2 {
   margin-left: 149px;
