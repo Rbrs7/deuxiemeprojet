@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "sass": "sass ./css/sass/base/projet3.scss ./css/projet3.css",
-    "watch:sass": "sass --watch ./css/sass/base/projet3.scss ./css/projet3.css",
+    "watch:sass": "sass --watch ./css/sass/projet3.scss:./css/projet3.css",
     "prefix": "postcss ./css/projet3.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "RBRS",
