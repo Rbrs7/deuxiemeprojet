@@ -174,7 +174,7 @@
 
 /* Animation hover boutons principaux */
 
-.nav-container1:hover, .nav-container2:hover, .nav-container3:hover{
+.nav-container1:hover, .nav-container1:focus, .nav-container1:active, .nav-container2:hover, .nav-container2:focus, .nav-container2:active, .nav-container3:hover, .nav-container3:focus, .nav-container3:active {
     background: $primary2;
     box-shadow: 1px 5px 12px -1px darken($box-shadow-color, 10%);
 

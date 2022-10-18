@@ -15,6 +15,11 @@ article {
         margin-left: 14px;
     }
 
+    @media (min-width:992px) {
+        margin-left: 0px;
+        margin-right: -3px;
+    }
+
 }
 
 .article {

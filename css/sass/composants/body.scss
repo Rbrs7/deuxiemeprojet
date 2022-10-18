@@ -8,6 +8,11 @@ body {
         width: auto;
         margin: auto
     }
+
+    & img{
+        object-fit: cover;
+    }
+
 }
 
 a:visited {
