@@ -1062,6 +1062,9 @@ footer li {
     align-items: center;
   }
 }
+.foot-logo img {
+  object-fit: contain;
+}
 
 .icon-location-food {
   margin-right: 5px;
