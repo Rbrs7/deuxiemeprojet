@@ -1307,19 +1307,19 @@ input[type=radio]:checked + .menu-container .menu-soustitre {
 }
 
 /* Animation hover boutons principaux */
-.nav-container1:hover, .nav-container1:focus, .nav-container1:active, .nav-container2:hover, .nav-container2:focus, .nav-container2:active, .nav-container3:hover, .nav-container3:focus, .nav-container3:active {
+.nav-container1:hover, .nav-container2:hover, .nav-container3:hover {
   background: rgba(146, 86, 220, 0.1294117647);
   box-shadow: 1px 5px 12px -1px rgba(165, 165, 165, 0.71);
 }
-.nav-container1:hover .icon-tablet, .nav-container1:focus .icon-tablet, .nav-container1:active .icon-tablet, .nav-container2:hover .icon-tablet, .nav-container2:focus .icon-tablet, .nav-container2:active .icon-tablet, .nav-container3:hover .icon-tablet, .nav-container3:focus .icon-tablet, .nav-container3:active .icon-tablet {
+.nav-container1:hover .icon-tablet, .nav-container2:hover .icon-tablet, .nav-container3:hover .icon-tablet {
   color: #9356DC;
   filter: brightness(70%);
 }
-.nav-container1:hover .icon-list-bullet, .nav-container1:focus .icon-list-bullet, .nav-container1:active .icon-list-bullet, .nav-container2:hover .icon-list-bullet, .nav-container2:focus .icon-list-bullet, .nav-container2:active .icon-list-bullet, .nav-container3:hover .icon-list-bullet, .nav-container3:focus .icon-list-bullet, .nav-container3:active .icon-list-bullet {
+.nav-container1:hover .icon-list-bullet, .nav-container2:hover .icon-list-bullet, .nav-container3:hover .icon-list-bullet {
   color: #9356DC;
   filter: brightness(70%);
 }
-.nav-container1:hover .icon-store-front, .nav-container1:focus .icon-store-front, .nav-container1:active .icon-store-front, .nav-container2:hover .icon-store-front, .nav-container2:focus .icon-store-front, .nav-container2:active .icon-store-front, .nav-container3:hover .icon-store-front, .nav-container3:focus .icon-store-front, .nav-container3:active .icon-store-front {
+.nav-container1:hover .icon-store-front, .nav-container2:hover .icon-store-front, .nav-container3:hover .icon-store-front {
   color: #9356DC;
   filter: brightness(70%);
 }
