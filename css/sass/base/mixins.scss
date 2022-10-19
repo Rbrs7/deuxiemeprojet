@@ -120,9 +120,10 @@
 @mixin header-logo {
     
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
     padding-top: 10px;
+    margin-right: 77px;
 }
 
 @mixin container-annexe{
